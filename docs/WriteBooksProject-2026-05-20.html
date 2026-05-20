@@ -106,5 +106,46 @@
       <li>如需要公开发布，还应再次做隐私化审查，确认真实素材中的姓名、事件和关系均已充分虚构化。</li>
     </ul>
   </section>
+
+  <section class="entry">
+    <h2>2026-05-20 13:02:00</h2>
+    <h3>本次修改内容</h3>
+    <ul>
+      <li>将《楼下有风》从 40 章、10 万字级初稿扩写为 120 章、30 万字级完整稿。</li>
+      <li>把原 40 个核心事件拆成“之前 / 当时 / 之后”三层，补足每个情绪节点的前奏、现场和余波。</li>
+      <li>优化后 30 章的毕业后语境，改用城市、书桌、旧文件夹、工作日常等场景，减少校园语境穿帮。</li>
+      <li>补强林青禾主体性，增加她的边界、生活和不被男主叙事完全占有的视角。</li>
+      <li>修正 <code>outline.md</code> 的 Markdown 缩进问题，避免部分标题被渲染成代码块。</li>
+    </ul>
+
+    <h3>涉及文件</h3>
+    <ul>
+      <li><code>scripts/novel-editor/generate_louxia_you_feng.py</code></li>
+      <li><code>docs/2026-05-20/小说/louxia-you-feng/project.md</code></li>
+      <li><code>docs/2026-05-20/小说/louxia-you-feng/outline.md</code></li>
+      <li><code>docs/2026-05-20/小说/louxia-you-feng/project-state.md</code></li>
+      <li><code>docs/2026-05-20/小说/louxia-you-feng/memory-snapshot.md</code></li>
+      <li><code>docs/2026-05-20/小说/louxia-you-feng/正文/</code></li>
+    </ul>
+
+    <h3>修改原因</h3>
+    <p>用户要求把《楼下有风》增加到 30 万字，并继续优化和修改。原 10 万字版本已经具备完整故事骨架，但章节容量不足以承载更长篇幅下的人物主体性、关系变化和毕业后释怀层次，因此本次采用结构扩写和二轮修订结合的方式处理。</p>
+
+    <h3>当前验证结果</h3>
+    <ul>
+      <li>合订本 <code>正文/楼下有风.md</code> 统计为 300,591 字，达到 30 万字目标。</li>
+      <li>共生成 120 章正文，逐章中文字符统计范围为 2,134-2,713，平均约 2,494。</li>
+      <li>便签诗章节检查为 30 章，符合“最好要有 30 个”的要求。</li>
+      <li>已检查第 91-120 章，未发现 <code>明天有没有课</code>、<code>课间</code>、<code>回宿舍</code>、<code>赶作业</code> 等明显校园语境穿帮句。</li>
+      <li><code>git diff --check</code> 已通过，仅提示 Windows 下脚本文件后续可能转换为 CRLF。</li>
+    </ul>
+
+    <h3>尚未解决的问题或待办</h3>
+    <ul>
+      <li>当前仍属于机器生成的长篇初稿，后续最好做人工精修，重点压缩重复心理独白和提升章节间的自然差异。</li>
+      <li>若用于公开发布，还需要进行一次完整隐私化审查和文学质量审读。</li>
+      <li>如继续扩展，可为林青禾单独增加数章独立生活场景，让她的主体性更扎实。</li>
+    </ul>
+  </section>
 </body>
 </html>

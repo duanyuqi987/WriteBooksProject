@@ -13,7 +13,7 @@ from pathlib import Path
 from textwrap import dedent
 
 
-ROOT = Path("docs/2026-05-20/小说/louxia-you-feng")
+ROOT = Path("docs/2026-05-20/小说/楼下有风")
 TEXT_DIR = ROOT / "正文"
 CHAR_DIR = ROOT / "人物"
 FORESHADOW_DIR = ROOT / "伏笔"

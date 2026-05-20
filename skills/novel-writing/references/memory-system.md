@@ -5,7 +5,7 @@
 ## 记忆分层
 
 ```
-docs/YYYY-MM-DD/小说/<书名 slug>/
+docs/YYYY-MM-DD/小说/<中文书名>/
 ├─ project.md              # 第一层：项目底座（永不丢失）
 ├─ outline.md              # 第二层：大纲状态（每章完成即更新）
 ├─ project-state.md        # 第三层：调度快照（每次会话写入）

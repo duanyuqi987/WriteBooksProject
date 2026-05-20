@@ -45,7 +45,7 @@ git status
 ### 4. 目录约定
 
 ```
-docs/YYYY-MM-DD/小说/<书名 slug>/
+docs/YYYY-MM-DD/小说/<中文书名>/
 ├─ project.md              # 项目底座（设定、角色列表、风格、技法偏好）
 ├─ outline.md              # 大纲（四层展开、章节状态追踪）
 ├─ project-state.md        # 调度快照
@@ -53,7 +53,7 @@ docs/YYYY-MM-DD/小说/<书名 slug>/
 ├─ 人物/<角色名>.md        # 角色卡（含弧光追踪）
 ├─ 伏笔/foreshadow-xxx.md  # 伏笔追踪（独立管理）
 ├─ 章节/chapter-xxx.md     # 章节工作文件（目标+正文+技法+审查）
-└─ <书名 slug>/第X卷/      # 纯正文目录
+└─ <中文书名>/第X卷/       # 纯正文目录
 ```
 
 ### 5. 双轨输出（可选）

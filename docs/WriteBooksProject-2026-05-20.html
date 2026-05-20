@@ -70,8 +70,8 @@
     <h2>2026-05-20 12:46:31</h2>
     <h3>本次修改内容</h3>
     <ul>
-      <li>根据 <code>C:\Users\usv\.agents\yjunbook\手机便签\张青</code> 的校园情感便签，虚构化生成 10 万字级温柔现实小说《楼下有风》。</li>
-      <li>根据 <code>C:\Users\usv\.agents\yjunbook\手机便签\诗歌</code> 的诗歌写法，原创嵌入 30 首便签诗。</li>
+      <li>根据 <code>本地校园情感素材（已脱敏）</code> 的校园情感素材，虚构化生成 10 万字级温柔现实小说《楼下有风》。</li>
+      <li>根据 <code>本地诗歌素材（已脱敏）</code> 的诗歌写法，原创嵌入 30 首日记诗。</li>
       <li>创建小说项目底座、大纲、项目状态、记忆快照、人物卡、伏笔文件、40 章正文和合订本。</li>
       <li>新增可复现生成脚本 <code>scripts/novel-editor/generate_louxia_you_feng.py</code>。</li>
     </ul>
@@ -89,13 +89,13 @@
     </ul>
 
     <h3>修改原因</h3>
-    <p>用户要求按既定计划直接生成《楼下有风》全书，并追加要求在小说中更多出现诗歌，最好 30 个，模仿其诗歌写作方法。本次采用虚构化改编，保留素材中的情绪结构和写作气质，避免直接照抄真实便签和原诗。</p>
+    <p>用户要求按既定计划直接生成《楼下有风》全书，并追加要求在小说中更多出现诗歌，最好 30 个，模仿其诗歌写作方法。本次采用虚构化改编，保留素材中的情绪结构和写作气质，避免直接照抄真实记录和原诗。</p>
 
     <h3>当前验证结果</h3>
     <ul>
       <li>合订本 <code>正文/楼下有风.md</code> 统计为 95,169 字，落在 95,000-105,000 目标区间。</li>
       <li>共生成 40 章正文，逐章统计范围为 2,308-2,419 字，平均约 2,371 字。</li>
-      <li>便签诗数量检查为 30 首。</li>
+      <li>日记诗数量检查为 30 首。</li>
       <li><code>git diff --check</code> 已通过。</li>
     </ul>
 
@@ -135,7 +135,7 @@
     <ul>
       <li>合订本 <code>正文/楼下有风.md</code> 统计为 300,591 字，达到 30 万字目标。</li>
       <li>共生成 120 章正文，逐章中文字符统计范围为 2,134-2,713，平均约 2,494。</li>
-      <li>便签诗章节检查为 30 章，符合“最好要有 30 个”的要求。</li>
+      <li>日记诗章节检查为 30 章，符合“最好要有 30 个”的要求。</li>
       <li>已检查第 91-120 章，未发现 <code>明天有没有课</code>、<code>课间</code>、<code>回宿舍</code>、<code>赶作业</code> 等明显校园语境穿帮句。</li>
       <li><code>git diff --check</code> 已通过，仅提示 Windows 下脚本文件后续可能转换为 CRLF。</li>
     </ul>
@@ -153,7 +153,7 @@
     <h3>本次修改内容</h3>
     <ul>
       <li>对《楼下有风》进行第一轮减法精修，重点处理 13 个关键章节：001、010、027、032、040、042、062、065、071、087、099、117、120。</li>
-      <li>替换重点章节中重复度最高的模板段落，包括“便签证据”“关系转折”“用力过度”“讲给别人听”“末尾收束”等。</li>
+      <li>替换重点章节中重复度最高的模板段落，包括“日记证据”“关系转折”“用力过度”“讲给别人听”“末尾收束”等。</li>
       <li>为重点章节补入更具体的动作和物件场景，例如鞋带、短信删除、楼梯间忙音、天台门锁、火车票、旧校徽等。</li>
       <li>新增公开前隐私审查清单 <code>privacy-review.md</code>。</li>
       <li>更新项目状态和记忆快照，标记为“第一轮减法精修完成，等待人工审读与隐私审查”。</li>
@@ -176,7 +176,7 @@
     <ul>
       <li>合订本 <code>正文/楼下有风.md</code> 当前统计为 298,539 字，属于 30 万字级精修稿。</li>
       <li>共 120 章，逐章中文字符统计范围为 2,005-2,713，平均约 2,477。</li>
-      <li>便签诗章节检查仍为 30 章。</li>
+      <li>日记诗章节检查仍为 30 章。</li>
       <li>已检查 13 个重点章节，不再出现本轮锁定的高重复模板句：<code>年轻时的许亦安总是在这些小地方用力</code>、<code>他也试过把这一天讲给别人听</code>、<code>他并不觉得自己在写小说</code> 等。</li>
       <li><code>python -m py_compile scripts/novel-editor/generate_louxia_you_feng.py</code> 已通过。</li>
       <li><code>git diff --check</code> 已通过，仅提示 Windows 下脚本文件后续可能转换为 CRLF。</li>
@@ -217,18 +217,139 @@
     <h3>当前验证结果</h3>
     <ul>
       <li>合订本 <code>正文/楼下有风.md</code> 当前统计为 295,741 字，仍属于 30 万字级别精修稿。</li>
-      <li>全书仍为 120 章，便签诗章节仍为 30 章。</li>
+      <li>全书仍为 120 章，日记诗章节仍为 30 章。</li>
       <li>已检查累计 28 个重点精修章节，未再出现本轮锁定的高重复模板句。</li>
       <li><code>python -m py_compile scripts/novel-editor/generate_louxia_you_feng.py</code> 已通过。</li>
       <li><code>git diff --check</code> 已通过，仅提示 Windows 下脚本文件后续可能转换为 CRLF。</li>
-      <li>自动隐私扫描未再发现 <code>张青</code>、<code>C:\Users</code>、<code>SOURCE_DIR</code> 或 <code>POEM_SOURCE_DIR</code> 出现在项目产物和生成脚本中。</li>
+      <li>自动隐私扫描未再发现 真实素材标识或真实本地路径 出现在项目产物和生成脚本中。</li>
     </ul>
 
     <h3>尚未解决的问题或待办</h3>
     <ul>
-      <li>仍需继续滚动处理剩余章节，尤其是 079-090 的便签自省段和 091-114 的毕业后回望段。</li>
+      <li>仍需继续滚动处理剩余章节，尤其是 079-090 的日记自省段和 091-114 的毕业后回望段。</li>
       <li>自动隐私扫描只能发现显性姓名、路径和号码，公开前还需要人工复读高识别事件是否过度贴近真实素材。</li>
       <li>如果后续需要严格恢复到 300,000 字以上，建议只补人物独立场景，不回填空泛心理独白。</li>
+    </ul>
+  </section>
+  <section class="entry">
+    <h2>2026-05-20 13:42:39</h2>
+    <h3>本次修改内容</h3>
+    <ul>
+      <li>按用户要求，将《楼下有风》的记录载体统一调整为旧日记本、日记和纸页，不再使用旧的电子记录载体说法。</li>
+      <li>重生成小说项目文档、120 章正文和合订本，确保生成脚本与产物保持一致。</li>
+      <li>同步清理本迭代记录中的历史素材称呼和真实本地路径，降低公开发布前的隐私暴露风险。</li>
+    </ul>
+
+    <h3>涉及文件</h3>
+    <ul>
+      <li><code>scripts/novel-editor/generate_louxia_you_feng.py</code></li>
+      <li><code>docs/2026-05-20/小说/louxia-you-feng/project.md</code></li>
+      <li><code>docs/2026-05-20/小说/louxia-you-feng/outline.md</code></li>
+      <li><code>docs/2026-05-20/小说/louxia-you-feng/project-state.md</code></li>
+      <li><code>docs/2026-05-20/小说/louxia-you-feng/memory-snapshot.md</code></li>
+      <li><code>docs/2026-05-20/小说/louxia-you-feng/正文/chapter-001.md</code> 等 120 章正文</li>
+      <li><code>docs/2026-05-20/小说/louxia-you-feng/正文/楼下有风.md</code></li>
+      <li><code>docs/WriteBooksProject-2026-05-20.html</code></li>
+    </ul>
+
+    <h3>修改原因</h3>
+    <p>用户明确提出不希望小说里继续出现原来的记录载体，希望可以改成日记本等更自然、更文学化的物件。本次把记录载体从素材形态中抽离出来，改成旧日记本、纸页、日记这种更稳定的叙事物件，同时顺手处理迭代文档里的历史敏感信息。</p>
+
+    <h3>当前验证结果</h3>
+    <ul>
+      <li>合订本 <code>正文/楼下有风.md</code> 当前统计为 296,046 字符量级。</li>
+      <li>全书仍为 120 章，日记诗章节为 30 章。</li>
+      <li>已扫描小说项目、生成脚本和当天迭代记录，未发现旧载体词、原始素材对象名或真实本地路径残留。</li>
+      <li><code>python -m py_compile scripts/novel-editor/generate_louxia_you_feng.py</code> 已通过。</li>
+      <li><code>git diff --check</code> 已通过，仅提示 Windows 下脚本文件后续可能转换为 CRLF。</li>
+    </ul>
+
+    <h3>尚未解决的问题或待办</h3>
+    <ul>
+      <li>当前只是替换记录载体和做自动扫描；公开发布前仍建议人工通读一遍高识别度事件和人物关系。</li>
+      <li>后续精修应继续优先做减法，压缩重复心理解释，增加人物动作和场景承载。</li>
+    </ul>
+  </section>
+  <section class="entry">
+    <h2>2026-05-20 13:54:27</h2>
+    <h3>本次修改内容</h3>
+    <ul>
+      <li>继续对《楼下有风》做第三轮减法精修，重点处理 chapter-079 到 chapter-114。</li>
+      <li>将 079-090 的后期自省段改为旧日记本整理、行李箱、宿舍后门、曹原的烟、沈安晴的信、走廊裂缝等具体场景。</li>
+      <li>将 091-114 的毕业后回望段改为毕业照、离校水房、火车向南、清理旧手机相册、同学群消息、校庆路口、楼下花坛、远远看见林青禾等具体场景。</li>
+      <li>清理后半部容易重复的模板环境句和解释句，避免“回忆解释回忆”。</li>
+      <li>更新项目状态和记忆快照，标记为第三轮后半部场景化精修完成。</li>
+    </ul>
+
+    <h3>涉及文件</h3>
+    <ul>
+      <li><code>scripts/novel-editor/generate_louxia_you_feng.py</code></li>
+      <li><code>docs/2026-05-20/小说/louxia-you-feng/project-state.md</code></li>
+      <li><code>docs/2026-05-20/小说/louxia-you-feng/memory-snapshot.md</code></li>
+      <li><code>docs/2026-05-20/小说/louxia-you-feng/正文/chapter-079.md</code> 到 <code>chapter-114.md</code></li>
+      <li><code>docs/2026-05-20/小说/louxia-you-feng/正文/楼下有风.md</code></li>
+      <li><code>docs/WriteBooksProject-2026-05-20.html</code></li>
+    </ul>
+
+    <h3>修改原因</h3>
+    <p>用户指出后半部 079-090 和 091-114 容易出现“回忆解释回忆”的问题。本轮把抽象说明压进可见动作和具体物件里，让人物通过整理、清理、经过、停顿、没有发送、没有上前等动作完成变化。</p>
+
+    <h3>当前验证结果</h3>
+    <ul>
+      <li>合订本 <code>正文/楼下有风.md</code> 当前统计为 279,714 字符量级，这是减法精修后的 28 万字级版本。</li>
+      <li>全书仍为 120 章，日记诗章节仍为 30 章。</li>
+      <li>已扫描项目产物、生成脚本和当天迭代记录，未发现旧载体词、原始素材对象名或真实本地路径残留。</li>
+      <li>已对 chapter-079 到 chapter-114 扫描本轮锁定的模板残留句，未发现命中。</li>
+      <li>已检查本地 Git 历史，确认早期提交中仍有旧素材称呼和真实路径命中；本次未改写提交历史。</li>
+      <li><code>python -m py_compile scripts/novel-editor/generate_louxia_you_feng.py</code> 已通过。</li>
+      <li><code>git diff --check</code> 已通过，仅提示 Windows 下部分文件后续可能转换为 CRLF。</li>
+    </ul>
+
+    <h3>尚未解决的问题或待办</h3>
+    <ul>
+      <li>当前版本质量上更接近减法精修稿，但字数从上一版下降；如果后续要严格回到 30 万字以上，建议只补人物独立场景，不回填空泛心理独白。</li>
+      <li>公开发布前需要做一次 Git 历史脱敏或 squash 整理，避免早期本地提交中保留旧素材称呼和真实路径。</li>
+      <li>下一轮可继续人工通读 chapter-091 到 chapter-114，检查毕业后时间线是否有个别段落仍显得跳转过快。</li>
+    </ul>
+  </section>
+  <section class="entry">
+    <h2>2026-05-20 14:03:12</h2>
+    <h3>本次修改内容</h3>
+    <ul>
+      <li>继续对《楼下有风》做尾声减法精修，重点处理 chapter-115 到 chapter-120。</li>
+      <li>在生成脚本中新增尾声专用精修配置，把毕业多年后的回望压进高铁小桌板、旧日记本、文件夹、书柜第二层、保存成功、早餐摊和出门不回头等具体动作。</li>
+      <li>移除尾声中容易重复的成人回望模板句，减少“解释回忆”的生成感，让结尾更像人物自己完成整理和放下。</li>
+      <li>更新项目状态和记忆快照，标记为尾声场景化收束完成。</li>
+    </ul>
+
+    <h3>涉及文件</h3>
+    <ul>
+      <li><code>scripts/novel-editor/generate_louxia_you_feng.py</code></li>
+      <li><code>docs/2026-05-20/小说/louxia-you-feng/project-state.md</code></li>
+      <li><code>docs/2026-05-20/小说/louxia-you-feng/memory-snapshot.md</code></li>
+      <li><code>docs/2026-05-20/小说/louxia-you-feng/正文/chapter-115.md</code> 到 <code>chapter-120.md</code></li>
+      <li><code>docs/2026-05-20/小说/louxia-you-feng/正文/楼下有风.md</code></li>
+      <li><code>docs/WriteBooksProject-2026-05-20.html</code></li>
+    </ul>
+
+    <h3>修改原因</h3>
+    <p>前一轮已经处理了 079-114 的后半部回望问题，但 115-120 仍有若干抽象自省和重复环境句。本轮把尾声从“说明已经释怀”改成“看见他怎样处理旧物、保存文稿、买早餐、走出门”，让收束更轻，也更符合温柔现实的写法。</p>
+
+    <h3>当前验证结果</h3>
+    <ul>
+      <li>合订本 <code>正文/楼下有风.md</code> 当前统计为 272,035 字符量级。</li>
+      <li>全书仍为 120 章，日记诗章节仍为 30 章。</li>
+      <li>已扫描小说项目、生成脚本和当天迭代记录，未发现旧载体词、原始素材对象名或真实本地路径残留。</li>
+      <li>已对 chapter-115 到 chapter-120 扫描本轮锁定的尾声模板残留句，未发现命中。</li>
+      <li><code>python -m py_compile scripts/novel-editor/generate_louxia_you_feng.py</code> 已通过。</li>
+      <li><code>git diff --check</code> 已通过，仅提示 Windows 下部分文件后续可能转换为 CRLF。</li>
+      <li>当前分支仍为 <code>main</code>，本地领先远端 4 个提交；本轮未提交、未推送。</li>
+    </ul>
+
+    <h3>尚未解决的问题或待办</h3>
+    <ul>
+      <li>当前文件层面已经保持清洁，但早期本地提交历史仍需要在公开发布前做 squash 或历史脱敏整理。</li>
+      <li>后续若继续提升质量，建议抽 12-15 章做人工级逐段改写，优先补“人物行动中的选择”，不要再补空泛独白。</li>
     </ul>
   </section>
 </body>

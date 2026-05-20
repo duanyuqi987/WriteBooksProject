@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="doc-version" content="v1.0">
+  <meta name="last-update" content="">
+  <meta name="word-count" content="0">
+  <meta name="source-policy" content="summarized-and-transformative">
+  <title>{{TITLE}}</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f7f4;
+      --panel: #ffffff;
+      --text: #1f2933;
+      --muted: #596579;
+      --border: #d9ded7;
+      --accent: #236967;
+      --code-bg: #101820;
+      --code-text: #eef4f8;
+      --toc-width: 300px;
+    }
+
+    [data-theme="dark"] {
+      --bg: #111417;
+      --panel: #181d21;
+      --text: #e8edf2;
+      --muted: #a7b2bf;
+      --border: #2d3742;
+      --accent: #76c7c0;
+      --code-bg: #0b0f14;
+      --code-text: #eef4f8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.78;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .layout {
+      display: grid;
+      grid-template-columns: var(--toc-width) minmax(0, 1fr);
+      min-height: 100vh;
+    }
+
+    .toc {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow: auto;
+      border-right: 1px solid var(--border);
+      background: var(--panel);
+      padding: 24px 18px;
+    }
+
+    .toc h2 {
+      margin: 0 0 14px;
+      font-size: 16px;
+    }
+
+    .toc ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .toc li {
+      margin: 6px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .content {
+      max-width: 980px;
+      width: 100%;
+      padding: 42px 46px 80px;
+    }
+
+    header.hero {
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.12;
+    }
+
+    h2, h3, h4 {
+      line-height: 1.32;
+      margin-top: 34px;
+      margin-bottom: 12px;
+    }
+
+    .subtitle, .meta, .source-note {
+      color: var(--muted);
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+      font-size: 14px;
+    }
+
+    .meta span {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 4px 8px;
+      background: color-mix(in srgb, var(--panel) 84%, var(--bg));
+    }
+
+    section {
+      scroll-margin-top: 24px;
+    }
+
+    .knowledge-point {
+      border-top: 1px solid var(--border);
+      margin-top: 28px;
+      padding-top: 20px;
+    }
+
+    .goal, .review, .pitfalls, .source-note {
+      border-left: 4px solid var(--accent);
+      padding: 10px 14px;
+      background: color-mix(in srgb, var(--panel) 82%, var(--bg));
+      border-radius: 0 6px 6px 0;
+    }
+
+    figure.diagram {
+      margin: 24px 0;
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--panel);
+      overflow-x: auto;
+    }
+
+    figure.diagram svg {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    figcaption {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .example-box, .num-example, .callout, .formula-block, .chapter-note {
+      margin: 18px 0;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 6px;
+      background: color-mix(in srgb, var(--panel) 88%, var(--bg));
+    }
+
+    .formula-block {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      white-space: pre-wrap;
+    }
+
+    .part-title {
+      margin-top: 46px;
+      padding-top: 26px;
+      border-top: 2px solid var(--border);
+      color: var(--accent);
+    }
+
+    pre {
+      overflow: auto;
+      border-radius: 8px;
+      background: var(--code-bg);
+      color: var(--code-text);
+      padding: 16px;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.94em;
+    }
+
+    :not(pre) > code {
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 1px 5px;
+      background: color-mix(in srgb, var(--panel) 70%, var(--bg));
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      display: block;
+      overflow-x: auto;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 8px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .toolbar {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      display: flex;
+      gap: 8px;
+    }
+
+    button {
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      background: var(--panel);
+      color: var(--text);
+      cursor: pointer;
+      padding: 8px 10px;
+    }
+
+    @media (max-width: 860px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .toc {
+        position: relative;
+        height: auto;
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .content {
+        padding: 28px 18px 70px;
+      }
+    }
+
+    @media print {
+      .toc, .toolbar { display: none; }
+      .layout { display: block; }
+      .content { max-width: none; padding: 0; }
+      body { background: #fff; color: #111; }
+      a { color: #111; text-decoration: underline; }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="toc" id="top">
+      <h2>目录</h2>
+      {{TOC}}
+    </aside>
+    <main class="content">
+      <header class="hero">
+        <h1>{{TITLE}}</h1>
+        <p class="subtitle">{{SUBTITLE}}</p>
+        <div class="meta">
+          {{DOC_META}}
+        </div>
+      </header>
+
+      {{CONTENT}}
+
+      <section id="changelog">
+        <h2>修订日志</h2>
+        {{CHANGELOG}}
+      </section>
+    </main>
+  </div>
+  <div class="toolbar" aria-label="阅读工具">
+    <button type="button" onclick="toggleTheme()">切换主题</button>
+    <button type="button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">返回顶部</button>
+  </div>
+  <script>
+    // 切换浅色和深色主题，并把读者偏好保存在当前浏览器。
+    function toggleTheme() {
+      const root = document.documentElement;
+      const next = root.dataset.theme === "dark" ? "light" : "dark";
+      root.dataset.theme = next;
+      localStorage.setItem("learning-doc-theme", next);
+    }
+
+    const savedTheme = localStorage.getItem("learning-doc-theme");
+    if (savedTheme) {
+      document.documentElement.dataset.theme = savedTheme;
+    }
+  </script>
+</body>
+</html>

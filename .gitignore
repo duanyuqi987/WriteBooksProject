@@ -1,0 +1,73 @@
+# === Claude Internal State ===
+.superpowers/
+.claude/
+
+# === Sensitive Information ===
+.env
+.env.*
+*.key
+*.pem
+*.secret
+*.credential
+credentials.json
+*.token
+secrets/
+
+# === IDE Configuration ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# === OS Trash ===
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# === Python Cache ===
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# === Virtual Environments ===
+.venv/
+venv/
+env/
+
+# === Node Dependencies ===
+node_modules/
+
+# === Temporary Files ===
+*.tmp
+*.temp
+*.log
+/tmp/
+/temp/
+
+# === System Files ===
+*.lock
+
+# === Generated Novel Content (exclude by default; users opt-in) ===
+docs/**/小说/*/章节/
+docs/**/小说/*/第*卷/
+
+# === Generated HTML Books (large files) ===
+docs/**/学习书/*.html
+
+# === Source Cache (copyright-sensitive) ===
+docs/source-cache/
+docs/**/来源缓存/
+
+# === Quality Reports (reproducible) ===
+docs/**/质量检查/
+
+# === Cached Models (for Whisper) ===
+models/
+*.bin
+*.pt
+*.onnx

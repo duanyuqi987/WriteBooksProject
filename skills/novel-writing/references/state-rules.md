@@ -24,7 +24,7 @@ idea → planned → drafting → reviewing → done
 1. **idea → planned**：novel-brainstorm 完成 project.md → novel-outline 完成分层大纲
 2. **planned → drafting**：novel-draft 开始写当前章
 3. **drafting → reviewing**：novel-draft 完成三层写作
-4. **reviewing → done**：novel-review 五层审查判定通过
+4. **reviewing → done**：novel-review 审查判定通过
 5. **done → next**：novel-update 执行 6 项同步 → 路由到下一章或下一卷
 
 ### 异常流程
@@ -32,6 +32,10 @@ idea → planned → drafting → reviewing → done
 - **reviewing → drafting**：小修（1-3 处，改 1 轮）或重写（核心问题，改 1 次）
 - **reviewing → blocked**：reject（方向错误，回退到 novel-outline）
 - **任何状态 → blocked**：canon 冲突或用户暂停
+
+### 轻量任务例外
+
+短篇片段、单段润色、临时审查不强制进入完整状态机。此时只需说明“未写入项目记忆”，并在用户要求纳入项目时再创建或更新文件。
 
 ## 冲突解决优先级
 
@@ -59,6 +63,7 @@ frontmatter > outline > project-state.md
 - 不能在有 planned 章节时去写后面的章节
 - 章节必须按 outline.md 顺序依次推进
 - 唯一例外：review 判定为 reject 时可回到当前章重新规划
+- 短篇和一次性片段不适用不跳章规则
 
 ## 记忆检查规则
 

@@ -1,6 +1,6 @@
 interface:
-  display_name: "Novel Writing Workbench"
-  short_description: "专门用于小说写作的 AI 写作台"
-  default_prompt: "Use $novel-writing-workbench to write novels, brainstorm ideas, plan outlines, draft chapters, review content, or manage characters and foreshadowing."
+  display_name: "中文小说写作台"
+  short_description: "通用中文小说创作、续写、审稿与记忆管理"
+  default_prompt: "用 $novel-writing-workbench 帮我构思、规划、续写或审查中文小说。"
 policy:
   allow_implicit_invocation: true

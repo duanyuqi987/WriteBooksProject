@@ -1,97 +1,83 @@
 ---
 name: novel-writing
 description: |
-  小说写作总控。负责状态判定、记忆加载、路由调度。
-  不代写正文、不造设定、不做审查。
+  通用中文小说写作总控。负责识别创作阶段、加载项目记忆、选择流程强度，并路由到头脑风暴、大纲、正文、审查或记忆更新工序。
+  适用于短篇、中篇、长篇、连载、类型小说和文学向小说。
 ---
 
 # 小说写作总控
 
-把小说请求路由到正确工序，维护状态机和记忆系统。
+本 skill 只做调度和状态判断，不直接代写正文。它的任务是把用户请求放到正确工序里，并确保已有项目不会丢失设定、角色、伏笔和进度。
 
-## HARD-GATE
+## 必做判断
 
-每次写作前必须执行：
+每次处理小说请求，先判断三件事：
 
-1. **扫描项目文件** → 判定当前状态
-2. **加载记忆系统** → 恢复上次进度（新项目跳过）
-3. **读取硬约束**：
-   - `skills/novel-writing/references/ai-flavor-banlist.md`
-   - `skills/novel-writing/references/writing-techniques.md`（技法库）
-4. **Skill 查找**（步骤 1.5）→ 根据当前场景匹配技法/技能/风格
-   - `skills/novel-writing/references/skill-finder.md`
-   - `skills/novel-writing/references/genre-technique-mapping.md`
-5. **可选：起点分析** → 运行 `scripts/qidian_analyzer.py` 获取市场参考
-6. **可选：小说数据集** → 运行 `scripts/novel_dataset_downloader.py` 获取写作参考素材
-7. **路由到工序** → 不允许越权代写
+1. **任务类型**：新作构思 / 大纲规划 / 正文起草 / 续写 / 审查 / 修改 / 记忆更新。
+2. **作品形态**：短篇 / 中篇 / 长篇 / 连载；文学向 / 类型向 / 网文向 / 实验向。
+3. **项目状态**：是否已有 `project.md`、`outline.md`、章节文件和记忆快照。
 
-## 状态机
+判断后再选择流程强度：
 
-状态以文件为真相源，详见 `references/state-rules.md`。
+| 模式 | 适用 | 做法 |
+|---|---|---|
+| 轻量一次性 | 单个片段、短篇练习、局部润色 | 直接完成任务，说明关键假设 |
+| 标准项目 | 有明确作品设定，需要持续推进 | 建立项目文件和章节计划 |
+| 长篇连续 | 多章、多卷、跨会话写作 | 使用完整状态机和记忆系统 |
 
-```
-idea → planned → drafting → reviewing → done
-                    ↑           ↓
-                    └── 小修/重写 ──→ blocked（方向错误）
-```
+## 启动检查
+
+已有项目必须重新读取文件，不使用旧对话印象代替：
+
+1. `project.md`：作品底座、风格、边界、canon
+2. `outline.md`：结构、章节顺序、当前章节状态
+3. `project-state.md`：当前调度快照和阻塞点
+4. `memory-snapshot.md`：最近章节摘要和累计变化
+5. `人物/`：角色当前状态和声纹
+6. `伏笔/`：未兑现伏笔和兑现计划
+7. 当前章节工作文件：frontmatter 状态优先
+
+冲突优先级：章节 frontmatter > outline.md > project-state.md。
 
 ## 路由表
 
-| 状态 | 路由目标 | 说明 |
-|------|---------|------|
-| idea（无 project.md） | `skills/novel-brainstorm` | 字数驱动头脑风暴 |
-| idea（有 project.md，缺 outline） | `skills/novel-outline` | 规划章节 |
-| planned | `skills/novel-draft` | 写正文 |
-| drafting | `skills/novel-draft` | 继续写 |
-| reviewing | `skills/novel-review` | 审查 |
-| done | `skills/novel-update` → 下一章/下一卷 | 记忆写入后继续 |
-| blocked | 按阻塞原因路由 | 人工干预 |
+| 状态或意图 | 路由目标 | 说明 |
+|---|---|---|
+| 无项目文件，用户想写新小说 | `skills/novel-brainstorm` | 澄清作品目标并生成项目底座 |
+| 有项目底座，缺大纲 | `skills/novel-outline` | 生成结构和章节路线 |
+| 当前章 `planned` | `skills/novel-draft` | 起草当前章 |
+| 当前章 `drafting` | `skills/novel-draft` | 继续当前章 |
+| 当前章 `reviewing` | `skills/novel-review` | 审查和修改建议 |
+| 当前章 `done` | `skills/novel-update` | 同步记忆后进入下一章 |
+| `blocked_reason` 非空 | 按阻塞原因处理 | 先解决方向、设定或信息缺口 |
+| 用户只要片段/改写 | `skills/novel-draft` 或 `skills/novel-review` | 走轻量模式，不强制建项目 |
 
-## 扫描文件清单（每次必做）
+## 新项目流程
 
-1. `project.md` 是否存在
-2. `outline.md` 是否存在，当前章节状态
-3. `章节/chapter-xxx.md` 的 frontmatter 状态
-4. `project-state.md` 的 blocked_reason（如存在）
-5. `memory-snapshot.md`（如存在，加载最近 5 章摘要）
+当用户只给出粗略想法时，不要直接写正文。先用 5 个问题收束：
 
-冲突解决：frontmatter > outline > project-state.md
+1. 作品长度：短篇 / 中篇 / 长篇 / 连载，或目标字数。
+2. 创作取向：文学向、类型向、网文向、现实向、悬疑向、幻想向等。
+3. 核心故事：谁在什么处境中必须做什么，否则会怎样。
+4. 读者体验：希望读者主要感到什么，最多 3 个词。
+5. 边界条件：不写什么、避免什么套路、必须保留什么。
 
-## 新项目启动流程
+用户信息足够后，路由到 `skills/novel-brainstorm` 生成 `project.md`。
 
-当用户说"我要写一本 X 字的小说，讲的是 Y"时：
+## 续写流程
 
-1. **先做字数评估**：根据目标字数计算卷数和章数
-2. **告知用户规模**："您的 50 万字目标约需 200-250 章，分 3-5 卷，每章约 2000-2500 字。是否确认这个规模？"
-3. **用户确认后**：路由到 `skills/novel-brainstorm` 开始头脑风暴
-4. **头脑风暴完成后**：用户确认设定后路由到 `skills/novel-outline` 生成分层大纲
+当用户说“继续写”“写下一章”“接着来”：
 
-## 恢复进度流程
-
-当用户说"继续写"或"继续写小说"时：
-
-1. 读取 `project-state.md` → 确认上次停在哪里
-2. 读取 `memory-snapshot.md` → 获取最近章节摘要
-3. 向用户汇报："上次写到第 X 卷第 Y 章，累计 Z 字。接下来写 chapter-XXX：[任务说明]。是否继续？"
-4. 用户确认后路由到对应工序
-
-## 进度报告格式
-
-```markdown
-## <书名> 写作进度
-
-- **项目状态：** [status]
-- **当前进度：** 第 X 卷 第 Y 章 / 共 Z 章
-- **已完成：** N 章 / 当前卷 M 章
-- **累计字数：** XXXX 字 / 目标 YYYY 字（完成度 ZZ%）
-- **未兑现伏笔：** N 条
-- **下一步：** [即将执行的操作]
-```
+1. 读取启动检查中的文件。
+2. 找到优先级最高的未完成章节：`reviewing` > `drafting` > 最早的 `planned`。
+3. 汇报当前进度和将要处理的章节。
+4. 路由到对应工序。
 
 ## 红线
 
-- 不跳章：章节按 outline 顺序依次推进
-- 单线程：同时只处理一个章节
-- 文件优先：每次必须重新读取，不缓存判断
-- 不越权：只裁决和路由，不代写产物
-- 纯小说：不接技术书、报告、教程等其他文体
+- 不跳过已存在的项目文件。
+- 不擅自改 canon，重大设定变化必须记录。
+- 不把网文节奏当作所有小说的默认节奏。
+- 不强制每章都“爽点”“打脸”“章末悬念”，除非作品取向需要。
+- 不为了流程完整而打断简单任务。
+- 不接非小说文体任务。

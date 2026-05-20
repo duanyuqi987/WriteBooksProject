@@ -1,46 +1,60 @@
 # 小说项目文件契约
 
+本文件定义持续写作项目的文件边界。短篇或一次性片段可以不完整创建这些文件，但长篇、连载和跨会话项目必须遵守。
+
 ## 文件清单
 
 | 文件 | 所有者 | 职责 |
 |---|---|---|
-| `project.md` | novel-brainstorm（初始化）、novel-update（canon 追加） | 项目设定、风格、世界观 |
-| `人物/[角色名].md` | novel-brainstorm（创建）、novel-update（变更记录） | 角色详细信息 |
-| `outline.md` | novel-outline | 卷结构和章节路线 |
-| `章节/chapter-xxx.md` | novel-draft（草稿）、novel-review（审查） | 章节目标 + 修改意见 + 定稿摘要 |
-| `【书名】/第X卷/chapter-xxx.md` | novel-draft（草稿）、novel-review（定稿） | 纯正文 |
-| `project-state.md` | novel-writing（调度快照） | 项目状态记录 |
+| `project.md` | novel-brainstorm 初始化，novel-update 追加 canon | 项目底座、主题、风格、边界、设定事实 |
+| `人物/[角色名].md` | novel-brainstorm 创建，novel-update 追加变化 | 角色欲望、矛盾、关系、声纹、变更记录 |
+| `outline.md` | novel-outline 创建，novel-update 更新状态 | 结构、章节路线、滚动规划 |
+| `章节/chapter-xxx.md` | novel-draft 创建，novel-review 填审查结果 | 章节目标、正文、修改意见、定稿摘要 |
+| `正文/chapter-xxx.md` | novel-draft 创建，novel-review 定稿 | 纯正文 |
+| `project-state.md` | novel-writing / novel-update | 调度快照：当前章、下一步、阻塞点 |
+| `memory-snapshot.md` | novel-update | 最近章节摘要和累计记忆 |
+| `伏笔/foreshadow-xxx.md` | novel-outline / novel-update | 伏笔状态：埋入、提示、兑现、放弃 |
 
 ## project.md 必填字段
 
 ```markdown
-# [中文书名]
+# [书名或暂定名]
+
+## 作品形态
+- 篇幅类型：
+- 目标字数：
+- 创作取向：
+- 目标读者或阅读场景：
 
 ## 核心 Premise
-> 一句话：谁 + 在什么处境 + 必须做什么 + 否则会怎样
-> 开篇策略：XXX
+> 谁 + 在什么处境 + 必须做什么 + 否则会怎样
 
-## 主题
-## 角色与关系
-## 世界观硬规则（至少1条，最多7条）
-## 核心冲突（主线冲突 + 升级方向）
-## 写作风格（叙事视角、文风要求、节奏偏好、禁止事项）
-## 字数规划（全书目标 + 每章目标）
-## 变更日志（运行时追加）
+## 主题与核心问题
+## 读者体验
+## 主要角色与关系
+## 世界、时代与硬规则
+## 核心冲突
+## 叙事策略
+## 写作风格
+## 技法偏好
+## 伏线与悬念
+## 待定问题
+## 变更日志
 ```
 
 ## outline.md 必填字段
 
 | 字段 | 约束 |
 |---|---|
-| 全书主线摘要 | 2-3 句话 |
-| 卷目标 | 1-2 句话，具体可执行 |
-| 任务说明 | 每章恰好一句话 |
-| 结构标记 | setup / build / climax / fallout，必填 |
+| 结构模型 | 说明短篇/中篇/长篇/连载采用什么结构 |
+| 全书或全文主线 | 2-3 句话 |
+| 人物弧线 | 起点、关键变化、终点 |
+| 结构规划 | 阶段/幕/卷目标 |
+| 当前推进区间 | 章节或场景路线 |
 | 状态 | planned / drafting / reviewing / done / blocked |
-| 后续方向 | 每卷 1-2 句话种子 |
+| 后续方向 | 只写方向种子，不伪造细节 |
 
-## 章节文件 frontmatter
+## 章节 frontmatter
 
 ```yaml
 ---
@@ -48,24 +62,23 @@ id: chapter-001
 volume: 1
 status: drafting
 review_round: 0
+word_count_target: 2500
+word_count_actual: 0
 canon_changed: false
-source_outline_version: 1
-updated_at: 2026-05-16
+updated_at: 2026-05-20
 ---
 ```
 
 ## 章节文件必填 section
 
-- 本章目标（从 outline 继承）
-- 修改意见（review skill 填写）
-- 定稿摘要（review 通过后填写，2-3 句话）
+- 本章目标
+- 正文
+- 自检记录
+- 修改意见
+- 定稿摘要
 
-## 修改意见格式
+## 状态冲突处理
 
-```markdown
-**review_status:** pass / minor_fix / rewrite_required / reject
-**review_severity:** minor / structural
+frontmatter > outline.md > project-state.md。
 
-### 判定依据
-### 建议修改
-```
+如果三者冲突，先以章节 frontmatter 为准，再修正 `outline.md` 和 `project-state.md`。

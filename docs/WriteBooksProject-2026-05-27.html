@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><title>WriteBooksProject 2026-05-27</title></head>
+<body>
+<h1>WriteBooksProject 2026-05-27</h1>
+
+<section>
+  <h2>2026-05-27 16:38:15 InkOS 完整内嵌与小说 skill 融合</h2>
+  <p>本次将本地 InkOS 副本完整复制到 <code>vendor/inkos/</code>，并新增 <code>inkos-bridge</code> 作为当前中文小说写作台的加速层。日常入口仍保留在 <code>novel-writing-workbench</code> 和 <code>novel-writing</code>，只有批量写章、导入续写、短篇包、工具化审稿、风格分析等任务才路由到 InkOS。</p>
+  <ul>
+    <li>修改内容：新增 <code>vendor/inkos/</code>、<code>skills/inkos-bridge/</code>、<code>references/inkos/</code>、<code>scripts/inkos.ps1</code>、<code>scripts/inkos_bootstrap.ps1</code> 和 <code>NOTICE.md</code>。</li>
+    <li>涉及文件：<code>SKILL.md</code>、<code>skills/novel-writing/SKILL.md</code>、<code>skills/novel-draft/SKILL.md</code>、<code>skills/novel-review/SKILL.md</code>、<code>skills/novel-update/SKILL.md</code>、<code>README.md</code>、<code>.gitignore</code>、<code>LICENSE</code>。</li>
+    <li>修改原因：吸收 InkOS 的多 Agent 流水线、truth files、hook ledger、题材规则、短篇和工具化审稿能力，加速小说生产，同时保留本项目 Markdown 真相源和中文写作习惯。</li>
+    <li>当前验证结果：已确认 InkOS 关键文件存在；<code>quick_validate.py</code> 在 <code>PYTHONUTF8=1</code> 下通过；<code>scripts/inkos_bootstrap.ps1</code> 完成依赖安装和 core/studio/cli 构建；<code>scripts/inkos.ps1 --help</code> 与 <code>scripts/inkos.ps1 doctor</code> 均可运行。</li>
+    <li>尚未解决的问题或待办：InkOS <code>doctor</code> 提示运行区尚未初始化 <code>inkos.json</code> 且未配置 LLM API key；这是当前未写入私密运行配置导致的预期状态。</li>
+  </ul>
+</section>
+
+<section>
+  <h2>2026-05-27 17:43:30 小说任务自动加载 skill 规则强化</h2>
+  <p>本次继续优化项目级协作规则，把“每次小说任务自动读取本项目 skill”写入 <code>CLAUDE.md</code>、根 <code>SKILL.md</code> 和 <code>skills/novel-writing/SKILL.md</code>，让代理在用户没有显式点名 skill 时也能自动进入小说写作台流程。</p>
+  <ul>
+    <li>修改内容：新增自动加载顺序：<code>CLAUDE.md</code> → <code>SKILL.md</code> → <code>skills/novel-writing/SKILL.md</code> → 对应工序 skill。</li>
+    <li>涉及文件：<code>CLAUDE.md</code>、<code>SKILL.md</code>、<code>skills/novel-writing/SKILL.md</code>、<code>docs/WriteBooksProject-2026-05-27.html</code>。</li>
+    <li>修改原因：减少用户指挥成本，让“继续写”“写下一章”“精修”“审稿”“批量写几章”等请求自动路由到正确流程。</li>
+    <li>当前验证结果：<code>quick_validate.py</code> 在 <code>PYTHONUTF8=1</code> 下通过；<code>git diff --check</code> 无空白错误，仅提示 Windows 换行转换。</li>
+    <li>尚未解决的问题或待办：后续可根据实际写作体验继续压缩提问次数和强化自动提交策略。</li>
+  </ul>
+</section>
+
+</body>
+</html>

@@ -48,6 +48,7 @@
 | `novel-review` | 审稿、去 AI 味、一致性检查 |
 | `novel-update` | canon、角色、伏笔、记忆、进度同步 |
 | `novel-whisper` | 语音转写为写作素材 |
+| `inkos-bridge` | InkOS 批量写章、导入续写、短篇包和工具化审稿 |
 
 ## 目录结构
 
@@ -69,9 +70,13 @@ WriteBooksProject/
 │   ├── novel-outline/
 │   ├── novel-draft/
 │   ├── novel-review/
-│   └── novel-update/
+│   ├── novel-update/
+│   └── inkos-bridge/
 ├── references/
+│   └── inkos/
 ├── scripts/
+├── vendor/inkos/
+├── .inkos-runtime/
 └── docs/
 ```
 
@@ -120,8 +125,9 @@ docs/YYYY-MM-DD/小说/<中文书名>/
 
 - Git
 - Python 3.x（脚本仅使用标准库）
+- Node.js 与 pnpm（可选，构建和运行内嵌 InkOS 时使用）
 - FFmpeg（可选，语音转写时使用）
 
 ## 许可
 
-MIT License，详见 [LICENSE](LICENSE)。
+AGPL-3.0-only，详见 [LICENSE](LICENSE)。原 MIT 许可文本保留在 `LICENSES/MIT-original.txt`。

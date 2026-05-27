@@ -21,6 +21,7 @@ description: |
 7. `skills/novel-writing/references/ai-flavor-banlist.md`：去 AI 味检查。
 8. `skills/novel-writing/references/chapter-rhythm.md`：章节和场景节奏。
 9. 相关风格文件：如 `通用中文小说.md`、`冷白描.md`、`怪诞悬疑.md`、`系统爽文.md`。
+10. 如果用户要求自动批量写章、完整短篇包或 InkOS 流水线，读取 `skills/novel-writing/references/inkos-integration.md` 并路由到 `skills/inkos-bridge`。
 
 轻量片段任务可以只读取用户提供的上下文，但必须说明缺失信息带来的假设。
 
@@ -44,6 +45,8 @@ description: |
 - 选择带来什么后果
 - 结尾留下的是余味、疑问、转折还是安静落点
 
+长篇和连载章节可吸收 InkOS 的两阶段纪律：先写正文变化，再做状态结算。正文里必须看得见人物动作、物件、对话或事件，不允许只在备注里宣布“关系变化”“伏笔推进”。
+
 ### 3. 二次打磨
 
 重点处理：
@@ -66,6 +69,17 @@ description: |
 - 一击两鸣：一个场景同时推进情节和关系。
 - 暗透法：让旁人说出角色不愿说破的事。
 - 繁章波折法：冲突场景内多次转折。
+
+## InkOS 伏笔账本纪律
+
+如果本章沿用 InkOS 的 hook ledger 或本项目 `伏笔/` 文件：
+
+- `mention`：正文自然触碰伏笔，不推进结果。
+- `advance`：伏笔必须在正文中有可定位的推进场景。
+- `resolve`：伏笔兑现必须有具体动作、物件、对话或事件支撑。
+- `defer`：只在章末备注记录延后理由，不在正文里假兑现。
+
+任何 `advance` / `resolve` 都不能只写在章节备注或记忆同步里。
 
 ## 章末处理
 
@@ -115,3 +129,4 @@ canon_changed: false
 - 是否有空泛、套路化、AI 腔句子。
 - 章节结尾是否符合本作品取向。
 - 字数是否明显偏离目标；偏离时说明原因。
+- 伏笔推进或兑现是否在正文里有实际落点。

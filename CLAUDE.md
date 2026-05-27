@@ -4,6 +4,26 @@
 
 全局行为规则见 `~/.claude/CLAUDE.md`，本文件仅含项目级约束。
 
+## 0. 小说任务自动加载规则
+
+任何与小说写作、构思、续写、精修、审稿、记忆同步、批量写章、InkOS、风格分析或写作 skill 优化有关的请求，都必须自动进入本项目小说工作流，不等待用户显式输入 `$novel-writing-workbench`。
+
+每次开始小说任务前，按顺序读取并执行：
+
+1. `CLAUDE.md`：项目级硬约束、目录、提交、安全边界。
+2. `SKILL.md`：小说写作台总入口和工序路由。
+3. `skills/novel-writing/SKILL.md`：状态判断、项目文件读取、流程强度选择。
+4. 按任务读取对应工序：
+   - 构思新书：`skills/novel-brainstorm/SKILL.md`
+   - 大纲规划：`skills/novel-outline/SKILL.md`
+   - 正文、续写、改写、润色：`skills/novel-draft/SKILL.md`
+   - 审稿、去 AI 味、一致性检查：`skills/novel-review/SKILL.md`
+   - 章节通过后的状态同步：`skills/novel-update/SKILL.md`
+   - 批量写章、导入续写、短篇包、InkOS Studio/TUI、工具化审稿：`skills/inkos-bridge/SKILL.md`
+5. 按工序只读取必要 reference，不一次性加载全部长文档。
+
+默认工作方式：如果用户只说“继续写”“写下一章”“帮我精修”“审一下”“批量写几章”，代理应自己完成路由、读取项目文件、执行、验证和汇报；不要反复要求用户指挥下一步。只有作品目标、关键情节取舍或不可逆覆盖风险无法从文件判断时，才向用户提问。
+
 ## 核心规则
 
 ### 1. docs/ 全部上传，敏感信息绝对不上传
@@ -12,9 +32,10 @@
 |------|------|
 | ✅ 上传 | `docs/` 全部（MD、HTML 等） |
 | ✅ 上传 | `skills/`、`references/`、`scripts/`、`assets/` |
+| ✅ 上传 | `vendor/inkos/` 源码、`LICENSES/`、`NOTICE.md` |
 | ❌ 不上传 | `.env`、`*.key`、`*.pem`、`*.secret`、`credentials.*` |
 | ❌ 不上传 | `.claude/`、`.superpowers/` |
-| ❌ 不上传 | `node_modules/`、`__pycache__/`、`.DS_Store`、`*.tmp` |
+| ❌ 不上传 | `.inkos-runtime/` 运行数据、`node_modules/`、`dist/`、`__pycache__/`、`.DS_Store`、`*.tmp` |
 
 ### 2. 每轮写作完成后必须 Git 提交
 
@@ -32,7 +53,10 @@ git status
 ### 3. 小说写作工序
 
 ```
-用户输入（含目标字数）
+用户输入（不要求显式点名 skill）
+  → 自动读取 CLAUDE.md + SKILL.md + novel-writing 总控
+  → 识别任务：新书 / 大纲 / 正文 / 精修 / 审稿 / 同步 / InkOS 加速
+  → 加载项目真相源：project.md + outline.md + project-state.md + memory-snapshot.md + 人物/ + 伏笔/
   → 字数评估（计算卷数、章数）
   → 头脑风暴（15维度渐进收束）
   → 大纲规划（四层展开：字数→卷→粗略章→精细章）
@@ -41,6 +65,8 @@ git status
   → 记忆写入（6项同步：canon + 角色 + 伏笔 + 快照 + 大纲 + 调度）
   → Git 提交
 ```
+
+InkOS 只作为加速层：用户要求“自动批量写多章、导入已有长篇续写、生成完整短篇包、Studio/TUI、工具化审稿、风格分析”时才走 `skills/inkos-bridge/SKILL.md`；单章续写、局部润色和人工把控精修默认走本项目原生工序。
 
 ### 4. 目录约定
 

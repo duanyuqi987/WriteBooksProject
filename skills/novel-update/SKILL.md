@@ -59,6 +59,14 @@ description: |
 - 已兑现：更新为 `paid_off`
 - 放弃或改写：记录原因，不静默删除
 
+如果来源包含 InkOS hook ledger，按以下方式映射：
+
+- `upsert` → 新建或更新伏笔文件。
+- `mention` → 追加“提示/触碰”记录。
+- `advance` → 追加“推进”记录，并注明正文对应段落。
+- `resolve` → 标记兑现，并记录兑现章节。
+- `defer` → 追加延后理由，不删除伏笔。
+
 ### 5. 更新大纲与章节状态
 
 - 当前章节 frontmatter 改为 `done`
@@ -82,6 +90,8 @@ description: |
 - 最近更新时间
 - 阻塞点，如无则留空
 
+InkOS truth files 只能作为候选资料。同步时必须以本项目正文、章节文件和 Markdown 真相源为准，不把工具运行状态直接覆盖到项目文件。
+
 ## 汇报模板
 
 ```markdown
@@ -102,3 +112,4 @@ description: |
 - 不静默删除伏笔、角色或历史记录。
 - 不让 `project-state.md` 覆盖章节 frontmatter 的真实状态。
 - 不为了同步而改正文内容。
+- 不把 InkOS 结算里的推测、计划或未落地伏笔写成已发生事实。

@@ -1,7 +1,8 @@
 ---
 name: novel-writing-workbench
 description: |
-  通用中文小说写作台。适用于短篇、中篇、长篇、连载小说、类型小说和文学向小说的构思、规划、起草、审稿与持续记忆。
+  通用中文小说写作台。任何中文小说写作、构思、续写、精修、审稿、记忆同步、批量写章或 InkOS 加速请求都应自动触发本 skill，即使用户没有显式输入 skill 名。
+  适用于短篇、中篇、长篇、连载小说、类型小说和文学向小说的构思、规划、起草、审稿与持续记忆。
   核心流程：目标澄清 → 项目底座 → 分层大纲 → 逐章起草 → 审查修订 → 记忆更新。
   默认以中文小说为对象，不写技术书、报告、教程或非小说文体。
 ---
@@ -21,11 +22,14 @@ description: |
 7. **作者署名固定**：所有新建小说项目、正文合订本、项目底座和发布说明的作者署名默认写为“段锦佑”，除非用户在当前对话中明确要求临时改用其他署名。
 8. **书名通俗有吸引力**：起小说名时优先清楚、好懂、有画面、有阅读欲，让读者一眼知道故事入口并愿意点开；避免只追求诗化、晦涩、抽象或拼音化。
 9. **保字数精修**：用户要求“优化、精修、打磨”时，默认不是压缩字数，而是在原有体量上提升文字、内容、场景、对话、动作、细节和现场感。除非用户明确要求删减或缩写，否则长篇精修后的总字数应基本保持原目标体量，单轮改动建议控制在原字数的 ±5% 到 ±10% 内；删掉空泛解释后，必须用有效场景、人物行动、对话和生活细节回补，不把长篇改成骨架稿。
+10. **InkOS 只做加速层**：批量写章、导入续写、短篇包、工具化审稿等任务可调用 `skills/inkos-bridge`；单章、片段、精修和强人工把控任务仍默认走本项目原生工序。
 
 ## 总流程
 
 ```text
 用户请求
+  ↓
+自动读取：CLAUDE.md → SKILL.md → skills/novel-writing/SKILL.md
   ↓
 识别任务类型：新作 / 续写 / 大纲 / 正文 / 修改 / 审查 / 记忆更新
   ↓
@@ -37,6 +41,25 @@ description: |
   ↓
 写入文件并汇报：改了什么、为什么、当前进度、下一步
 ```
+
+## 自动加载顺序
+
+每次小说任务默认读取：
+
+1. `CLAUDE.md`：项目级硬约束和安全边界。
+2. `SKILL.md`：总入口、模式和路由。
+3. `skills/novel-writing/SKILL.md`：状态判断和项目文件读取。
+4. 对应工序 skill：`novel-brainstorm`、`novel-outline`、`novel-draft`、`novel-review`、`novel-update`、`novel-whisper` 或 `inkos-bridge`。
+
+用户不需要显式说“使用某个 skill”。除非会覆盖、删除、改 canon 或无法判断作品目标，否则代理应自己完成路由和执行。
+
+## 工作模式
+
+| 模式 | 入口 | 适用场景 |
+|---|---|---|
+| 本地创作模式 | `novel-writing` 系列 | 构思、单章、片段、精修、审稿、记忆同步 |
+| InkOS 加速模式 | `skills/inkos-bridge` | 自动批量写多章、导入长篇续写、短篇包、AI 味检测、风格分析、Studio/TUI |
+| 融合模式 | InkOS 生成 → 本项目审稿归档 | 先快速产出草稿，再按 `docs/YYYY-MM-DD/小说/<中文书名>/` 纳入本项目 |
 
 ## 流程强度
 
@@ -56,6 +79,7 @@ description: |
 | 审稿、查问题、去 AI 味、检查一致性 | `skills/novel-review` |
 | 一章通过后同步记忆、角色、伏笔、状态 | `skills/novel-update` |
 | 录音转文字、整理口述素材 | `skills/novel-whisper` |
+| 自动批量写章、导入续写、短篇包、InkOS Studio/TUI、工具化审稿 | `skills/inkos-bridge` |
 
 ## 项目目录
 
@@ -85,6 +109,8 @@ docs/YYYY-MM-DD/小说/<中文书名>/
 - `skills/novel-writing/references/writing-techniques.md`：中文小说技法库
 - `skills/novel-writing/references/ai-flavor-banlist.md`：去 AI 味检查
 - `skills/novel-writing/references/genre-technique-mapping.md`：类型与创作取向匹配
+- `skills/novel-writing/references/inkos-integration.md`：InkOS 加速层触发边界
+- `references/inkos/workflows.md`：InkOS 命令与归档方式
 
 ## 交付汇报
 

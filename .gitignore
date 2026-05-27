@@ -42,6 +42,24 @@ env/
 # === Node Dependencies ===
 node_modules/
 
+# === Vendored InkOS Runtime and Build Outputs ===
+vendor/inkos/node_modules/
+vendor/inkos/**/node_modules/
+vendor/inkos/**/dist/
+vendor/inkos/coverage/
+vendor/inkos/.turbo/
+vendor/inkos/.pnpm-store/
+vendor/inkos/test-project/
+.inkos-runtime/*
+!.inkos-runtime/.gitkeep
+.inkos-runtime/.inkos/
+.inkos-runtime/books/
+.inkos-runtime/covers/
+.inkos-runtime/shorts/
+.inkos-runtime/prompt/
+.inkos-runtime/inkos.json
+.inkos-runtime/*.log
+
 # === Temporary Files ===
 *.tmp
 *.temp

@@ -86,6 +86,7 @@
 | foreshadow-003 | QQ第一句话 | ch023 | ch041 | planned |
 | foreshadow-004 | 勒贝格测度诗 | ch028 | ch044 | planned |
 | foreshadow-005 | 最后一笑 | ch001意象预埋 | ch050 | planned |
+| foreshadow-006 | 她也许知道 | ch003 | ch036/ch049 | planted |
 
 ## 待定问题
 

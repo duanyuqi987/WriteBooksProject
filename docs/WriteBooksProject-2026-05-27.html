@@ -40,5 +40,17 @@
   </ul>
 </section>
 
+<section>
+  <h2>2026-05-27 18:21:21 《后来我们笑着走过》自动连续写作规则与第2-6章</h2>
+  <p>本次按用户要求把“不要逐章询问，自动连续写到目标字数”的偏好写入项目小说 skill，并从第二章起连续推进到第六章。由于单次上下文无法真实完成20万字全文，本轮只统计实际写入的正文，后续将默认从第七章继续，不再要求用户逐章下令。</p>
+  <ul>
+    <li>修改内容：更新 <code>CLAUDE.md</code>、根 <code>SKILL.md</code>、<code>skills/novel-writing/SKILL.md</code> 的自动连续写作规则；新增 <code>chapter-002.md</code> 至 <code>chapter-006.md</code> 纯正文和章节工作稿；新增 <code>foreshadow-006.md</code>。</li>
+    <li>涉及文件：<code>docs/2026-05-27/小说/后来我们笑着走过/正文/chapter-002.md</code> 至 <code>chapter-006.md</code>、<code>章节/chapter-002.md</code> 至 <code>chapter-006.md</code>、<code>outline.md</code>、<code>memory-snapshot.md</code>、<code>project-state.md</code>、人物卡和伏笔文件。</li>
+    <li>修改原因：减少用户指挥成本，让长篇写作按目标字数自动推进，同时保持每章审查、记忆同步和字数统计，不用摘要或占位符冒充正文。</li>
+    <li>当前验证结果：<code>scripts/count_text.py</code> 统计第1-6章纯正文累计约17505字；AI味禁用词快速扫描未命中；下一章已更新为 <code>chapter-007：成绩单上的距离</code>。</li>
+    <li>尚未解决的问题或待办：距离20万字目标仍需继续写作约18.2万字；后续默认自动连续写完整章节并同步状态。</li>
+  </ul>
+</section>
+
 </body>
 </html>

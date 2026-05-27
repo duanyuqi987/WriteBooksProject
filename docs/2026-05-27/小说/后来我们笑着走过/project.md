@@ -81,12 +81,13 @@
 
 | ID | 名称 | 埋入位置 | 兑现位置 | 状态 |
 |---|---|---|---|---|
-| foreshadow-001 | 第一首诗 | ch001-ch010 | ch050 | planned |
+| foreshadow-001 | 第一首诗 | ch001-ch010 | ch050 | advanced |
 | foreshadow-002 | 翠湖长椅 | ch021 | ch049-ch050 | planned |
 | foreshadow-003 | QQ第一句话 | ch023 | ch041 | planned |
 | foreshadow-004 | 勒贝格测度诗 | ch028 | ch044 | planned |
 | foreshadow-005 | 最后一笑 | ch001意象预埋 | ch050 | planned |
 | foreshadow-006 | 她也许知道 | ch003 | ch036/ch049 | planted |
+| foreshadow-007 | 课本空白处和日记本 | ch008 | ch043/ch050 | planted |
 
 ## 待定问题
 
@@ -97,3 +98,4 @@
 ## 变更日志
 
 - 2026-05-27：基于本地手机便签素材建立20万字青春成长小说项目。
+- 2026-05-27：完成第一卷第七至十章，累计正文约26365字，并新增“课本空白处和日记本”伏笔。

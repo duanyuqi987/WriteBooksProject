@@ -3,9 +3,9 @@ id: chapter-027
 title: 她说为我好
 volume: 3
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 1083
+word_count_actual: 3136
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [暗透法, 白描, 不写之写]
@@ -30,6 +30,7 @@ foreshadows_paid: []
 - 本章完成大纲任务：异地聊天减少、少聊一点、为你好。
 - 沈安晴的退开有压力依据，不是突然冷漠。
 - 新伏笔 `foreshadow-009` 已有正文起点。
+- 扩写轮补入军训细节、宿舍旁观、社团招新、空间动态和少聊一点后的反应，使“为你好”创伤更有前因。
 
 ## 修改意见
 

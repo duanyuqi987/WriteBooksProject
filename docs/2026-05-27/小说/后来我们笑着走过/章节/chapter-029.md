@@ -3,9 +3,9 @@ id: chapter-029
 title: 楼下的风
 volume: 3
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 1229
+word_count_actual: 3016
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [白描, 一击两鸣, 暗透法]
@@ -30,6 +30,7 @@ foreshadows_paid: []
 - 本章完成大纲任务：楼下等电话、风、排节目、争执。
 - 林予怀说“那就不说”造成关系伤害。
 - 沈安晴主动解释，但被主角的防御刺伤。
+- 扩写轮补入楼下小卖部、室友提醒、学生会误会、文学课留白和未发出的道歉，使电话冲突更有积累。
 
 ## 修改意见
 

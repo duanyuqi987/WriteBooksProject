@@ -3,9 +3,9 @@ id: chapter-028
 title: 勒贝格测度
 volume: 3
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 1093
+word_count_actual: 3001
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [草蛇灰线, 白描, 不写之写]
@@ -30,6 +30,7 @@ foreshadows_paid: []
 - 本章完成大纲任务：图书馆、实分析、勒贝格测度、现代诗。
 - 数学名词不炫技，服务距离主题。
 - 沈安晴“那就先别告诉我”保留温柔边界。
+- 扩写轮补入国庆留校、图书馆空场、数学书误入、读书分享会和半句宋词，使测度诗更贴合异地沉默。
 
 ## 修改意见
 

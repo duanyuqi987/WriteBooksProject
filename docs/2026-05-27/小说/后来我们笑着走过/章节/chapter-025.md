@@ -3,9 +3,9 @@ id: chapter-025
 title: 志愿表上的南北
 volume: 3
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 1292
+word_count_actual: 3114
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [白描, 一击两鸣, 暗透法]
@@ -30,6 +30,7 @@ foreshadows_paid: []
 - 本章完成大纲任务：志愿、南北、家庭意见、赵一鸣提醒。
 - 林予怀没有盲目跟随沈安晴，保住自我路径。
 - 沈安晴想看海，开启更大的世界。
+- 扩写轮补入招生计划书、父亲压力、班主任谈话、机房确认和城市距离，使南北分离更现实。
 
 ## 修改意见
 

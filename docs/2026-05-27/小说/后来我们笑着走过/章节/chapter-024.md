@@ -3,9 +3,9 @@ id: chapter-024
 title: 暑假的电话
 volume: 3
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 1210
+word_count_actual: 3091
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [白描, 不写之写, 草蛇灰线]
@@ -30,6 +30,7 @@ foreshadows_paid: []
 - 本章完成大纲任务：暑假 QQ、手机号、第一次电话。
 - 家庭环境和电话线细节让靠近落在生活里。
 - 沈安晴的怕与边界清楚，不被写成简单接受。
+- 扩写轮补入暑假家务、网吧等待、短信费用、旧手机号和电话边界，使靠近里的现实阻力更清楚。
 
 ## 修改意见
 

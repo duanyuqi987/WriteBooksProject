@@ -3,9 +3,9 @@ id: chapter-022
 title: 我喜欢你
 volume: 3
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 1449
+word_count_actual: 3534
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [白描, 暗透法, 一击两鸣]
@@ -30,6 +30,7 @@ foreshadows_paid: []
 - 本章完成大纲任务：同学录返还、走廊表白、沈安晴说需要想想。
 - 沈安晴不是奖品，保留犹豫和压力。
 - “我知道一点”推进既有伏笔。
+- 扩写轮补入返校等待、同学录细节、表白前退路、班级合影和沈安晴回应，使“我喜欢你”有足够现场支撑。
 
 ## 修改意见
 

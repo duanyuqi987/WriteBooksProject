@@ -3,9 +3,9 @@ id: chapter-023
 title: 你好，我是沈安晴
 volume: 3
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 1327
+word_count_actual: 3091
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [草蛇灰线, 白描, 不写之写]
@@ -30,6 +30,7 @@ foreshadows_paid: []
 - 本章完成大纲任务：好友申请、验证消息、聊天、晚安。
 - QQ 作为时代物件落地，未脱离 2012 年语境。
 - 沈安晴的回应温柔但有边界。
+- 扩写轮补入旧电脑、QQ空间整理、输入删除、初聊节奏、宋词对照和赵一鸣旁观，使线上靠近更有时代质感。
 
 ## 修改意见
 

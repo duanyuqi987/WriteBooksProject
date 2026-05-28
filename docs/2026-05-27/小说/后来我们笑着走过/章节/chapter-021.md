@@ -3,9 +3,9 @@ id: chapter-021
 title: 翠湖月光
 volume: 3
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 1467
+word_count_actual: 3527
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [白描, 草蛇灰线, 不写之写]
@@ -30,6 +30,7 @@ foreshadows_paid: []
 - 本章完成大纲任务：翠湖路灯、长椅、同学散开、QQ 线索。
 - 没把靠近写成确定关系，保留暧昧和不安。
 - 翠湖意象从邀约推进到具体地点。
+- 扩写轮补入毕业夜小街、冰粉摊、长椅对话、散场恐惧和 QQ 提议，使高考后第一次靠近更克制。
 
 ## 修改意见
 

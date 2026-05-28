@@ -3,11 +3,11 @@ id: chapter-015
 title: 明天会更好
 volume: 2
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 1278
+word_count_actual: 3077
 canon_changed: true
-updated_at: 2026-05-27
+updated_at: 2026-05-28
 techniques_used: [草蛇灰线, 不写之写, 白描]
 foreshadows_planted: []
 foreshadows_paid: []
@@ -30,6 +30,7 @@ foreshadows_paid: []
 - 本章完成大纲任务：广播歌回响、沈安晴说“稳也会怕”、林予怀写《暗恋》。
 - 避免直接引用现代歌曲歌词，只保留标题和场景功能。
 - 现代诗保持青涩，不拔高成成熟诗人。
+- 扩写轮补入五月热意、李白诗句课堂、给未来自己的话、风油精递不出去和邱老师“今天做题”的提醒，使《暗恋》第一版更有来处。
 
 ## 修改意见
 

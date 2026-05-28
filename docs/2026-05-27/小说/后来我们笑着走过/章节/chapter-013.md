@@ -3,11 +3,11 @@ id: chapter-013
 title: 被窝里的手电筒
 volume: 2
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 1281
+word_count_actual: 3127
 canon_changed: true
-updated_at: 2026-05-27
+updated_at: 2026-05-28
 techniques_used: [白描, 不写之写, 反衬法]
 foreshadows_planted: []
 foreshadows_paid: []
@@ -30,6 +30,7 @@ foreshadows_paid: []
 - 本章完成大纲任务：被窝、手电筒、熄灯后背单词、宿管查寝。
 - 学习压力通过眼镜起雾、被窝闷热、巧克力、风油精等物件落地。
 - 章末没有空泛总结，落在黑暗中写歪的日记。
+- 扩写轮补入早读时间表、体检视力、鼻血、水房、给家里打电话和鸡蛋糕，使身体代价与家庭压力同时落地。
 
 ## 修改意见
 

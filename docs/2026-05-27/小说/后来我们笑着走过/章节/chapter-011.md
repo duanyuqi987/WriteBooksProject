@@ -3,11 +3,11 @@ id: chapter-011
 title: 分班名单
 volume: 2
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 1612
+word_count_actual: 3431
 canon_changed: true
-updated_at: 2026-05-27
+updated_at: 2026-05-28
 techniques_used: [白描, 一击两鸣, 不写之写]
 foreshadows_planted: []
 foreshadows_paid: []
@@ -30,6 +30,7 @@ foreshadows_paid: []
 - 本章完成大纲任务：公告栏、理科一班名单、赵一鸣调侃、林予怀的清醒落点。
 - 没把同班写成甜点，而是写成继续受苦的条件。
 - 与第一卷的成绩单、错题本、日记本形成延续。
+- 扩写轮补入寒假返校、文理意向表、目标墙、新教室大扫除和沈安晴的物理目标，使“同班不是靠近”更有现实压力。
 
 ## 修改意见
 

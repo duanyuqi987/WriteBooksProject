@@ -3,11 +3,11 @@ id: chapter-012
 title: “学习好的人很厉害”
 volume: 2
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 1565
+word_count_actual: 3053
 canon_changed: true
-updated_at: 2026-05-27
+updated_at: 2026-05-28
 techniques_used: [白描, 暗透法, 一击两鸣]
 foreshadows_planted: []
 foreshadows_paid: []
@@ -30,6 +30,7 @@ foreshadows_paid: []
 - 本章完成大纲任务：一句话触发学习动力，邱老师指出“怕麻烦”，错题本升级。
 - 沈安晴通过讲题呈现，不被神化。
 - 赵一鸣提出“想学习，还是想让她知道你在学习”的关键问题。
+- 扩写轮补入邱老师课堂点名、沈安晴讲题细节、晚饭后对答案和错题本方法升级，使学习线不只服务暗恋。
 
 ## 修改意见
 

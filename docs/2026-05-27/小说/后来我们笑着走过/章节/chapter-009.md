@@ -3,11 +3,11 @@ id: chapter-009
 title: 元旦晚会以前
 volume: 1
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 2241
+word_count_actual: 3410
 canon_changed: true
-updated_at: 2026-05-27
+updated_at: 2026-05-28
 techniques_used: [白描, 暗透法, 一击两鸣]
 foreshadows_planted: []
 foreshadows_paid: []
@@ -30,6 +30,7 @@ foreshadows_paid: []
 - 本章完成大纲任务：合唱排练、教室布置、红纸花、明天会更好。
 - 林予怀承认自己因别人喊沈安晴名字而不舒服，控制欲种子被轻微埋下。
 - 赵一鸣继续用调侃把主角拉回现实。
+- 扩写轮补入节目表、排练、歌词标注和布置教室，使元旦晚会前的公开观看机会更自然。
 
 ## 修改意见
 

@@ -3,11 +3,11 @@ id: chapter-007
 title: 成绩单上的距离
 volume: 1
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 2259
+word_count_actual: 3349
 canon_changed: true
-updated_at: 2026-05-27
+updated_at: 2026-05-28
 techniques_used: [白描, 一击两鸣, 不写之写]
 foreshadows_planted: []
 foreshadows_paid: []
@@ -30,6 +30,7 @@ foreshadows_paid: []
 - 本章完成大纲任务：后墙成绩单、先找她名字、自卑差距、学习计划、错题本第一页。
 - 林予怀的行动变化落到具体物件：蓝色错题本、英语阅读、二十八分。
 - 赵一鸣继续作为戳破自卑逻辑的朋友存在。
+- 扩写轮补入考前紧张、英语错因、二十八分拆解和错题本购买过程，使自卑转学习的逻辑更扎实。
 
 ## 修改意见
 

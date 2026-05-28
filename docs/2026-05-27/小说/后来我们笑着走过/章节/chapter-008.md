@@ -3,11 +3,11 @@ id: chapter-008
 title: 课本空白处
 volume: 1
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 1959
+word_count_actual: 3018
 canon_changed: true
-updated_at: 2026-05-27
+updated_at: 2026-05-28
 techniques_used: [白描, 草蛇灰线, 不写之写]
 foreshadows_planted: [foreshadow-007]
 foreshadows_paid: []
@@ -30,6 +30,7 @@ foreshadows_paid: []
 - 本章完成大纲任务：课本空白处、座位调整、撕下最后一页、日记本承接。
 - 暗恋没有停在抒情，落到语文书、手电筒、作文批语等物件。
 - 新伏笔 `foreshadow-007` 已在正文中有明确起点。
+- 扩写轮补入课本被收检查、座位移动细节、作文写不出和撕页过程，使课本空白处转入日记本更有压力。
 
 ## 修改意见
 

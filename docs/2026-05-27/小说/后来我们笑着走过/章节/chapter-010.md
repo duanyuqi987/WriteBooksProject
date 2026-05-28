@@ -3,11 +3,11 @@ id: chapter-010
 title: 藏在心里的姑娘
 volume: 1
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 2399
+word_count_actual: 3382
 canon_changed: true
-updated_at: 2026-05-27
+updated_at: 2026-05-28
 techniques_used: [白描, 草蛇灰线, 不写之写]
 foreshadows_planted: []
 foreshadows_paid: []
@@ -30,6 +30,7 @@ foreshadows_paid: []
 - 本章完成大纲任务：沈安晴合唱、红纸花、晚会散场、现代诗。
 - 第一卷诗歌线从古体《初见》推进到现代诗《藏在心里的姑娘》。
 - 章末落在日记本而非空泛总结。
+- 扩写轮补入晚会前食堂、班主任观看、小红花细节和散场清扫，使《藏在心里的姑娘》情绪来源更饱满。
 
 ## 修改意见
 

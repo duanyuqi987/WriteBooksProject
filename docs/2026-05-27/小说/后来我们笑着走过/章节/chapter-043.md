@@ -3,9 +3,9 @@ id: chapter-043
 title: 旧日记
 volume: 5
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 1063
+word_count_actual: 2451
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [物件回收, 草蛇灰线, 不写之写]
@@ -30,6 +30,7 @@ foreshadows_paid: [foreshadow-001, foreshadow-007]
 - 本章完成大纲任务：旧日记、第一首诗、课本空白处和毕业照回收。
 - 李商隐诗句作为阅读痕迹出现，服务情绪而不抢戏。
 - 林予怀写下“后来不用问了”，为结尾不追问铺垫。
+- 扩写轮补入旧纸箱、课程表、同学录祝福语、纸飞机和母亲旁观，使旧物回收更完整。
 
 ## 修改意见
 
@@ -51,4 +52,4 @@ foreshadows_paid: [foreshadow-001, foreshadow-007]
 
 ## 定稿摘要
 
-- 林予怀在家整理旧书，翻出蓝色错题本、语文书撕页、日记本和毕业照。他重读《初见》《暗恋》，想起“此情可待成追忆，只是当时已惘然”，并在旧问题下面写下“后来不用问了”。
+- 林予怀在家整理旧书，翻出蓝色错题本、语文书撕页、日记本、同学录、纸飞机和毕业照。他重读《初见》《暗恋》，看见沈安晴当年写下“过好自己的生活”，并在旧问题下面写下“后来不用问了”。

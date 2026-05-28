@@ -81,15 +81,15 @@
 
 | ID | 名称 | 埋入位置 | 兑现位置 | 状态 |
 |---|---|---|---|---|
-| foreshadow-001 | 第一首诗 | ch001-ch010 | ch050 | advanced |
-| foreshadow-002 | 翠湖长椅 | ch020/ch021 | ch049-ch050 | advanced |
-| foreshadow-003 | QQ第一句话 | ch023 | ch041 | planted |
-| foreshadow-004 | 勒贝格测度诗 | ch028 | ch044 | planted |
-| foreshadow-005 | 最后一笑 | ch001意象预埋 | ch050 | planned |
-| foreshadow-006 | 她也许知道 | ch003/ch022 | ch036/ch049 | advanced |
-| foreshadow-007 | 课本空白处和日记本 | ch008 | ch043/ch050 | planted |
-| foreshadow-008 | 误会模式 | ch017 | ch027/ch036 | advanced |
-| foreshadow-009 | “为你好”创伤 | ch027 | ch036/ch039 | advanced |
+| foreshadow-001 | 第一首诗 | ch001-ch010 | ch043/ch050 | paid_off |
+| foreshadow-002 | 翠湖长椅 | ch020/ch021 | ch046/ch049/ch050 | paid_off |
+| foreshadow-003 | QQ第一句话 | ch023 | ch041/ch050 | paid_off |
+| foreshadow-004 | 勒贝格测度诗 | ch028 | ch044 | paid_off |
+| foreshadow-005 | 最后一笑 | ch001意象预埋 | ch049/ch050 | paid_off |
+| foreshadow-006 | 她也许知道 | ch003/ch022 | ch036/ch049 | paid_off |
+| foreshadow-007 | 课本空白处和日记本 | ch008 | ch043/ch050 | paid_off |
+| foreshadow-008 | 误会模式 | ch017 | ch037/ch049 | paid_off |
+| foreshadow-009 | “为你好”创伤 | ch027 | ch036/ch039/ch048 | paid_off |
 | foreshadow-010 | 替代品风险 | ch031 | ch039/ch040 | paid_off |
 
 ## 待定问题
@@ -105,3 +105,4 @@
 - 2026-05-27：完成第二卷第十一至二十章，累计正文约40265字，并埋入翠湖邀约与误会模式。
 - 2026-05-28：完成第三卷第二十一至三十章，累计正文约52830字，并埋入 QQ 第一句话、勒贝格测度诗和“为你好”创伤。
 - 2026-05-28：完成第四卷第三十一至四十章，累计正文约65115字，并兑现唐青禾线的替代品风险与控制欲反省。
+- 2026-05-28：完成第五卷第四十一至五十章，累计正文约76599字，50章主线初稿完结；后续进入保结构扩写轮以接近20万字目标。

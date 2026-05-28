@@ -3,9 +3,9 @@ id: chapter-005
 title: 物理题的步骤分
 volume: 1
 status: done
-review_round: 2
+review_round: 3
 word_count_target: 4000
-word_count_actual: 3348
+word_count_actual: 4324
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [白描, 一击两鸣, 草蛇灰线]
@@ -31,6 +31,7 @@ foreshadows_paid: []
 - 林予怀的行动变化明确：把暗恋写成解题步骤，但仍停在自我保存阶段。
 - 沈安晴的弱项被写出，避免女主只有“干净安静”的单一标签。
 - 扩写轮补入讲题路线预演、四遍解法取舍和叶蓁对六十一分的反应，使“不敢靠近”更可感。
+- 第一轮精修压缩同段内“可能/也许”的机械重复，保留林予怀预演失败的心理逻辑。
 
 ## 修改意见
 

@@ -3,11 +3,11 @@ id: chapter-020
 title: 最后一科以后
 volume: 2
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 1570
+word_count_actual: 3043
 canon_changed: true
-updated_at: 2026-05-27
+updated_at: 2026-05-28
 techniques_used: [白描, 草蛇灰线, 不写之写]
 foreshadows_planted: [foreshadow-002]
 foreshadows_paid: []
@@ -30,6 +30,7 @@ foreshadows_paid: []
 - 本章完成大纲任务：最后一科、收卷、毕业照、同学录、翠湖邀约。
 - 没把表白提前兑现，保持卷末钩子。
 - `foreshadow-002` 已有明确正文起点。
+- 扩写轮补入英语考前、考后校门、回校扔书、纸飞机、沈安晴回递同学录和留言句，使第二卷散场更完整。
 
 ## 修改意见
 

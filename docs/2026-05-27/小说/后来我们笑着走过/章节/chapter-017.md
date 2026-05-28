@@ -3,11 +3,11 @@ id: chapter-017
 title: 表哥误会
 volume: 2
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 1303
+word_count_actual: 3030
 canon_changed: true
-updated_at: 2026-05-27
+updated_at: 2026-05-28
 techniques_used: [暗透法, 白描, 不写之写]
 foreshadows_planted: [foreshadow-008]
 foreshadows_paid: []
@@ -30,6 +30,7 @@ foreshadows_paid: []
 - 本章完成大纲任务：校门口、陌生男生、奶茶、表哥可能性、林予怀崩溃。
 - 误会没有写成狗血确认，而是写成主角的想象失控。
 - 新伏笔 `foreshadow-008` 有明确正文起点。
+- 扩写轮补入周六数学小卷、公交站观察、空教室崩溃、第二天确认表哥和错题本“事实/想象”分线，使误会模式更有根。
 
 ## 修改意见
 

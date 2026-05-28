@@ -3,11 +3,11 @@ id: chapter-018
 title: 三载同窗未敢言
 volume: 2
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 1493
+word_count_actual: 3043
 canon_changed: true
-updated_at: 2026-05-27
+updated_at: 2026-05-28
 techniques_used: [草蛇灰线, 白描, 一击两鸣]
 foreshadows_planted: []
 foreshadows_paid: []
@@ -30,6 +30,7 @@ foreshadows_paid: []
 - 本章完成大纲任务：百日誓师、辛弃疾课堂、灰色同学录、未能递出。
 - 公版古典词句用于课堂语境，不挪用现代歌词。
 - 林予怀的诗保持青涩和自我审判。
+- 扩写轮补入誓师宣誓、同学录表格、赵一鸣留言、模拟考讲评、停电夜和作文课遗憾提示，使“未敢言”有更多拖延场面。
 
 ## 修改意见
 

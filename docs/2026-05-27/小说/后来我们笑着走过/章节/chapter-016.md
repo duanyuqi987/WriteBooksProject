@@ -3,11 +3,11 @@ id: chapter-016
 title: 倒计时
 volume: 2
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 1265
+word_count_actual: 2986
 canon_changed: true
-updated_at: 2026-05-27
+updated_at: 2026-05-28
 techniques_used: [白描, 草蛇灰线, 不写之写]
 foreshadows_planted: []
 foreshadows_paid: []
@@ -30,6 +30,7 @@ foreshadows_paid: []
 - 本章完成大纲任务：高三、倒计时牌、排名压紧、风油精差点递出。
 - 林予怀与沈安晴距离缩短，但情感距离没有被浪漫化。
 - 便签“高考后说”进入错题本，形成后续承接物。
+- 扩写轮补入搬上四楼、倒计时牌更换、午休限时训练、周测、风油精犹豫和家里电话，使高三压力更具体。
 
 ## 修改意见
 

@@ -3,11 +3,11 @@ id: chapter-004
 title: 赵一鸣看出来了
 volume: 1
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 2829
+word_count_actual: 3626
 canon_changed: true
-updated_at: 2026-05-27
+updated_at: 2026-05-28
 techniques_used: [白描, 暗透法, 一击两鸣]
 foreshadows_planted: []
 foreshadows_paid: []
@@ -30,6 +30,7 @@ foreshadows_paid: []
 - 本章完成大纲任务：纸条戳破、赵一鸣调侃、林予怀承认配不上。
 - 赵一鸣声纹清晰：嘴欠但有分寸，能把林予怀从自我神化里拉回现实。
 - 章末完成选择变化：林予怀开始背单词，喜欢转化成行动。
+- 扩写轮补入乡镇自卑、拒绝台词预演和课本上写“学”的动作，使学习动力更有来源。
 
 ## 修改意见
 

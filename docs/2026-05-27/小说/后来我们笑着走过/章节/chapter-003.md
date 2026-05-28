@@ -3,11 +3,11 @@ id: chapter-003
 title: 饮水机旁的一秒
 volume: 1
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 2825
+word_count_actual: 3747
 canon_changed: true
-updated_at: 2026-05-27
+updated_at: 2026-05-28
 techniques_used: [白描, 不写之写, 草蛇灰线]
 foreshadows_planted: [foreshadow-006]
 foreshadows_paid: []
@@ -30,6 +30,7 @@ foreshadows_paid: []
 - 本章完成大纲任务：饮水机、转身、对视、袖口湿掉、写不出日记正文。
 - 伏笔推进有正文依据：沈安晴怔了一下并弯嘴角，但未解释她真实想法。
 - 章末落在“替两个人保存回忆”，符合本书疼痛成长方向。
+- 扩写轮补入接水时间表、课堂走神被点名和赵一鸣试探，使“一秒”带来的余波更充分。
 
 ## 修改意见
 

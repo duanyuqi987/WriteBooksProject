@@ -3,9 +3,9 @@ id: chapter-034
 title: 秋风扫落叶
 volume: 4
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 1064
+word_count_actual: 2918
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [景物线, 不写之写, 对照]
@@ -30,6 +30,7 @@ foreshadows_paid: []
 - 本章完成大纲任务：秋天落叶、图书馆、关东煮、海边照片。
 - 沈安晴没有出场，但她的新生活造成现实距离。
 - 唐青禾的受伤通过看见而非控诉表现。
+- 扩写轮补入图书馆重逢、豆浆缓和、关东煮日常和海边照片冲击，使旧人新生活与新人日常形成对照。
 
 ## 修改意见
 

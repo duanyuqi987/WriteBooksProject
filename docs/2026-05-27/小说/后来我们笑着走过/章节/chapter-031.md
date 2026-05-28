@@ -3,9 +3,9 @@ id: chapter-031
 title: 唐青禾
 volume: 4
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 1415
+word_count_actual: 3289
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [白描, 不写之写, 对照]
@@ -30,6 +30,7 @@ foreshadows_paid: []
 - 本章完成大纲任务：唐青禾出场、拉林予怀进小组、林予怀感到被新关系拽出旧沉默。
 - 已埋入替代品风险，但没有把新人物写成工具人。
 - 林予怀对沈安晴的旧消息仍有反应，为后续摇摆保留事实基础。
+- 扩写轮补入课堂雨声、鲁迅朗读、小组分工、图书馆协作和夜路对话，使唐青禾出场更有声纹。
 
 ## 修改意见
 

@@ -3,9 +3,9 @@ id: chapter-035
 title: 可乐和全家桶
 volume: 4
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 1218
+word_count_actual: 3318
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [场景对话, 回声结构, 白描]
@@ -30,6 +30,7 @@ foreshadows_paid: [foreshadow-009]
 - 本章完成大纲任务：旧人见面、可乐和全家桶、谈唐青禾。
 - 沈安晴没有被写成审判者，她只是说出自己不能承担的部分。
 - “为你好”的旧伤被重新触碰，为下一章电话澄清铺垫。
+- 扩写轮补入青河冬夜、德克士细节、全家桶冷场、唐青禾话题和县一中后门回望，使边界谈判更清醒。
 
 ## 修改意见
 

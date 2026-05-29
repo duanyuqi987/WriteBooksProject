@@ -3,11 +3,11 @@ id: chapter-037
 title: 控制欲
 volume: 4
 status: done
-review_round: 3
+review_round: 4
 word_count_target: 4000
-word_count_actual: 3536
+word_count_actual: 3590
 canon_changed: true
-updated_at: 2026-05-28
+updated_at: 2026-05-29
 techniques_used: [冲突场景, 自我审判, 白描]
 foreshadows_planted: []
 foreshadows_paid: []
@@ -32,6 +32,7 @@ foreshadows_paid: []
 - 唐青禾有自己的社交和边界，不是围着主角旋转。
 - 扩写轮补入期末复习、社团聚餐照片、电话冲突、读书分享会门外偷看和日记二次自省，使控制欲从判断落到连续事件。
 - 第二轮精修将章末从“问题还会看”改为笔帽、楼梯笑声和宿舍门外的现实声响。
+- 第四轮前四卷精修补强唐青禾的社团事务目标，让冲突不只围绕林予怀的吃醋。
 
 ## 修改意见
 

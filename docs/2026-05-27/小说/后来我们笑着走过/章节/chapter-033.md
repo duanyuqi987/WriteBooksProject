@@ -3,11 +3,11 @@ id: chapter-033
 title: 一鸣的判断
 volume: 4
 status: done
-review_round: 2
+review_round: 3
 word_count_target: 4000
-word_count_actual: 3342
+word_count_actual: 3350
 canon_changed: true
-updated_at: 2026-05-28
+updated_at: 2026-05-29
 techniques_used: [对话推进, 白描, 镜像人物]
 foreshadows_planted: []
 foreshadows_paid: []
@@ -31,6 +31,7 @@ foreshadows_paid: []
 - 唐青禾受伤不是误会，而是听见林予怀自己说不清。
 - 林予怀仍没有被写成纯受害者，人物问题继续外显。
 - 扩写轮补入改稿聊天、赵一鸣电话、空教室排练和唐青禾受伤回应，使替代品风险从判断落到事件。
+- 第四轮前四卷精修将过重标签改为“止痛药”，减少概念判断，继续保留赵一鸣的提醒功能。
 
 ## 修改意见
 

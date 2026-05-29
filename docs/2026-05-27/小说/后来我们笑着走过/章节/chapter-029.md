@@ -3,11 +3,11 @@ id: chapter-029
 title: 楼下的风
 volume: 3
 status: done
-review_round: 2
+review_round: 3
 word_count_target: 4000
-word_count_actual: 3945
+word_count_actual: 3954
 canon_changed: true
-updated_at: 2026-05-28
+updated_at: 2026-05-29
 techniques_used: [白描, 一击两鸣, 暗透法]
 foreshadows_planted: []
 foreshadows_paid: []
@@ -31,6 +31,7 @@ foreshadows_paid: []
 - 林予怀说“那就不说”造成关系伤害。
 - 沈安晴主动解释，但被主角的防御刺伤。
 - 扩写轮补入楼下小卖部、室友提醒、学生会误会、文学课留白和未发出的道歉，使电话冲突更有积累。
+- 第四轮前四卷精修把“时间不给撤回键”的判断落到湖边风、手机键盘和未发出的道歉动作上。
 
 ## 修改意见
 

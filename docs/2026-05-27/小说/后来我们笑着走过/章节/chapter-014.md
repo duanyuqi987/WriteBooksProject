@@ -3,11 +3,11 @@ id: chapter-014
 title: 赵一鸣的问题
 volume: 2
 status: done
-review_round: 4
+review_round: 5
 word_count_target: 4000
-word_count_actual: 3947
+word_count_actual: 3940
 canon_changed: true
-updated_at: 2026-05-28
+updated_at: 2026-05-29
 techniques_used: [暗透法, 一击两鸣, 白描]
 foreshadows_planted: []
 foreshadows_paid: []
@@ -33,6 +33,7 @@ foreshadows_paid: []
 - 扩写轮补入期中分析表、沈安晴学习方法发言、目标墙改成前十、沈安晴一句肯定和赵一鸣更尖锐的追问，使“高考后”成为清晰欠条。
 - 第一轮精修减少“其实”连用，让自我拆穿更像自然心理推进。
 - 第二轮精修将章末从解释性自白改为日记本纸页鼓起的物件落点。
+- 第四轮前四卷精修去掉直接判断，让“不说”的答案更干净。
 
 ## 修改意见
 

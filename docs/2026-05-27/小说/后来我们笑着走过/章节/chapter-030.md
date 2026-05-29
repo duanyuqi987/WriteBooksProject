@@ -3,11 +3,11 @@ id: chapter-030
 title: 第一条裂缝
 volume: 3
 status: done
-review_round: 2
+review_round: 3
 word_count_target: 4000
-word_count_actual: 4018
+word_count_actual: 3977
 canon_changed: true
-updated_at: 2026-05-28
+updated_at: 2026-05-29
 techniques_used: [不写之写, 暗透法, 白描]
 foreshadows_planted: []
 foreshadows_paid: []
@@ -31,6 +31,7 @@ foreshadows_paid: []
 - 第三卷以温和但真实的裂缝收束。
 - 没把沈安晴写成伤害者，也没有替林予怀开脱。
 - 扩写轮补入聊天变少后的夜晚、曹然照应、赵一鸣来访、做证明题判断和慢一点后的余波，使第三卷裂缝更稳。
+- 第四轮前四卷精修压缩自我诊断列表，改为筷子停在碗边和“没有底气”的动作反应。
 
 ## 修改意见
 

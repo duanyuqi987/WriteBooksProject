@@ -3,11 +3,11 @@ id: chapter-031
 title: 唐青禾
 volume: 4
 status: done
-review_round: 2
+review_round: 3
 word_count_target: 4000
-word_count_actual: 3571
+word_count_actual: 3569
 canon_changed: true
-updated_at: 2026-05-28
+updated_at: 2026-05-29
 techniques_used: [白描, 不写之写, 对照]
 foreshadows_planted: [foreshadow-010]
 foreshadows_paid: []
@@ -31,6 +31,7 @@ foreshadows_paid: []
 - 已埋入替代品风险，但没有把新人物写成工具人。
 - 林予怀对沈安晴的旧消息仍有反应，为后续摇摆保留事实基础。
 - 扩写轮补入课堂雨声、鲁迅朗读、小组分工、图书馆协作和夜路对话，使唐青禾出场更有声纹。
+- 第四轮前四卷精修去掉概念判断，让楚州从中转站变成起点的意识更自然。
 
 ## 修改意见
 

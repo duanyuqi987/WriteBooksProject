@@ -3,11 +3,11 @@ id: chapter-001
 title: 九月风初凉
 volume: 1
 status: done
-review_round: 1
+review_round: 2
 word_count_target: 4000
-word_count_actual: 4472
+word_count_actual: 4484
 canon_changed: true
-updated_at: 2026-05-27
+updated_at: 2026-05-29
 techniques_used: [白描, 草蛇灰线, 不写之写]
 foreshadows_planted: [foreshadow-001, foreshadow-005]
 foreshadows_paid: []
@@ -289,7 +289,7 @@ foreshadows_paid: []
 
 我睁着眼，看着墙上那条路灯留下的白线。
 
-那一年九月，风还不凉，法桐叶还没有落完。我不知道自己会把一个名字记那么久，也不知道很多年后再见到她，我们会连一句话都说不出来。
+那一年九月，风还不凉，法桐叶还没有落完。我不知道自己会把一个名字记那么久，也不知道很多年后再见到她，我们会把最重的话留在沉默里，只笑一下。
 
 我只知道，高中的第一天，我想变成一个不一样的人。
 
@@ -301,6 +301,7 @@ foreshadows_paid: []
 - 伏笔已落到动作：写名又划掉、笑与名字意象。
 - 未直接套用原素材完整事件链，人物和地点已小说化。
 - 待审点：字数略低于目标章均值，后续章节可逐步拉长。
+- 第四轮前四卷精修修正终章伏笔口径，与最终街口相见保持一致。
 
 ## 修改意见
 

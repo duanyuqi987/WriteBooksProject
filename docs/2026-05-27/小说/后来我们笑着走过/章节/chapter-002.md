@@ -3,11 +3,11 @@ id: chapter-002
 title: 第二排靠窗
 volume: 1
 status: done
-review_round: 2
+review_round: 3
 word_count_target: 4000
 word_count_actual: 5166
 canon_changed: true
-updated_at: 2026-05-28
+updated_at: 2026-05-29
 techniques_used: [白描, 一击两鸣, 草蛇灰线]
 foreshadows_planted: []
 foreshadows_paid: []
@@ -32,6 +32,7 @@ foreshadows_paid: []
 - 沈安晴仍以生活细节呈现，没有被神化成单一女神。
 - 伏笔推进：窗边意象、课本空白处和浅青色小挂件。
 - 扩写轮补入早起、水房、军训结束、苹果和挂件回想，使校园日常与自卑来源更具体。
+- 第四轮前四卷精修去掉概念判断，用喉咙被校服领口勒住的动作表现少年不敢开口。
 
 ## 修改意见
 

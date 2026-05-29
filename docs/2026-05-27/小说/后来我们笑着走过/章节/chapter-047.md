@@ -3,7 +3,7 @@ id: chapter-047
 title: 婚礼或街口
 volume: 5
 status: done
-review_round: 5
+review_round: 6
 word_count_target: 4000
 word_count_actual: 5402
 canon_changed: true
@@ -34,6 +34,7 @@ foreshadows_paid: []
 - 第一轮精修调整章末“挺好”重复句，保留祝福余味但减少口头回环。
 - 第二轮精修将章末从直接判断改为喜糖纸和橘子糖的物件回声。
 - 第三轮硬校对修正老同学口中的邱老师任教学科，并明确退休的是高一班主任陈老师。
+- 第四轮节奏精修压低“普通生活”连用，把周知远照顾沈安晴的段落改为更自然的日常白描。
 
 ## 修改意见
 

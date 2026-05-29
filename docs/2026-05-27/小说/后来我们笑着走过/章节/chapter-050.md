@@ -3,11 +3,11 @@ id: chapter-050
 title: 后来我们笑着走过
 volume: 5
 status: done
-review_round: 2
+review_round: 3
 word_count_target: 4000
-word_count_actual: 7351
+word_count_actual: 7375
 canon_changed: true
-updated_at: 2026-05-28
+updated_at: 2026-05-29
 techniques_used: [全书收束, 诗歌回收, 不写之写]
 foreshadows_planted: []
 foreshadows_paid: [foreshadow-001, foreshadow-002, foreshadow-003, foreshadow-004, foreshadow-005, foreshadow-007]
@@ -31,6 +31,7 @@ foreshadows_paid: [foreshadow-001, foreshadow-002, foreshadow-003, foreshadow-00
 - 《后来》现代诗完成，承接全书诗歌线。
 - 结尾落在擦掉墨迹和前往楚州，生活继续。
 - 扩写轮补入旧物文件袋、父母包子、车站送别、翠湖经过、沈安晴“一路顺利”、楚州落地、备份文档和继续上班，让全书从青春伤口落回日常生活。
+- 第四轮节奏精修将终章列表式总结改为人物具体动作，并把“二十万字”元叙述收束为“写到结尾”。
 
 ## 修改意见
 

@@ -3,7 +3,7 @@ id: chapter-049
 title: 相见无言
 volume: 5
 status: done
-review_round: 3
+review_round: 4
 word_count_target: 4000
 word_count_actual: 4338
 canon_changed: true
@@ -32,6 +32,7 @@ foreshadows_paid: [foreshadow-005, foreshadow-006]
 - 赵一鸣和粉店日常把情绪落回生活。
 - 扩写轮补入药袋、父亲身体、街口噪声、林予怀放弃分析沈安晴动作、粉店吃粉和清洁工意象，让最后一笑落回普通日子。
 - 第三轮硬校对修正点名回忆里的“说到”为说“到”。
+- 第四轮节奏精修将“普通”重复和清洁工意象的解释腔改为动作落点，保留一笑而过的克制。
 
 ## 修改意见
 

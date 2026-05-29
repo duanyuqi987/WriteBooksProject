@@ -3,11 +3,11 @@ id: chapter-044
 title: 测不出的距离
 volume: 5
 status: done
-review_round: 2
+review_round: 3
 word_count_target: 4000
 word_count_actual: 2475
 canon_changed: true
-updated_at: 2026-05-28
+updated_at: 2026-05-29
 techniques_used: [诗歌回收, 对照, 白描]
 foreshadows_planted: []
 foreshadows_paid: [foreshadow-004]
@@ -31,6 +31,7 @@ foreshadows_paid: [foreshadow-004]
 - 没把订婚消息写成狗血打击，而是写成“普通生活”的力量。
 - 《后来》现代诗进入后续结尾线。
 - 扩写轮补入老电影院、叶蓁犹豫告知、周知远“挺稳”的现实质感、旧文件夹和给未来自己的回复，使距离主题完成转义。
+- 第三轮硬校对将“市实验小学”修正为“县实验小学”，保持青河县设定一致。
 
 ## 修改意见
 

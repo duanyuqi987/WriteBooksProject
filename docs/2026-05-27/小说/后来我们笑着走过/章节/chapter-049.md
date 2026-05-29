@@ -3,11 +3,11 @@ id: chapter-049
 title: 相见无言
 volume: 5
 status: done
-review_round: 2
+review_round: 3
 word_count_target: 4000
-word_count_actual: 4336
+word_count_actual: 4338
 canon_changed: true
-updated_at: 2026-05-28
+updated_at: 2026-05-29
 techniques_used: [不写之写, 白描, 最后一笑]
 foreshadows_planted: []
 foreshadows_paid: [foreshadow-005, foreshadow-006]
@@ -31,6 +31,7 @@ foreshadows_paid: [foreshadow-005, foreshadow-006]
 - 没有让二人解释往事，沉默承担结尾重量。
 - 赵一鸣和粉店日常把情绪落回生活。
 - 扩写轮补入药袋、父亲身体、街口噪声、林予怀放弃分析沈安晴动作、粉店吃粉和清洁工意象，让最后一笑落回普通日子。
+- 第三轮硬校对修正点名回忆里的“说到”为说“到”。
 
 ## 修改意见
 

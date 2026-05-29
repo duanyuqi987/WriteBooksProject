@@ -5,7 +5,7 @@ volume: 4
 status: done
 review_round: 2
 word_count_target: 4000
-word_count_actual: 3196
+word_count_actual: 3506
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [夜谈, 朋友镜像, 主题回收]

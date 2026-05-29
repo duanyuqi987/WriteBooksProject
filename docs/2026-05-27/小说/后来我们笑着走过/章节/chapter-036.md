@@ -5,7 +5,7 @@ volume: 4
 status: done
 review_round: 2
 word_count_target: 4000
-word_count_actual: 3217
+word_count_actual: 3525
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [电话场景, 不写之写, 旧伏笔回收]

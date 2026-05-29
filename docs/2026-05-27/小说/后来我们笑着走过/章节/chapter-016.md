@@ -5,7 +5,7 @@ volume: 2
 status: done
 review_round: 2
 word_count_target: 4000
-word_count_actual: 2986
+word_count_actual: 3745
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [白描, 草蛇灰线, 不写之写]

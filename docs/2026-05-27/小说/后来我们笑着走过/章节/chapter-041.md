@@ -3,11 +3,11 @@ id: chapter-041
 title: 很久以后的消息
 volume: 5
 status: done
-review_round: 2
+review_round: 3
 word_count_target: 4000
 word_count_actual: 3110
 canon_changed: true
-updated_at: 2026-05-28
+updated_at: 2026-05-29
 techniques_used: [草蛇灰线, 白描, 不写之写]
 foreshadows_planted: []
 foreshadows_paid: [foreshadow-003]
@@ -31,6 +31,7 @@ foreshadows_paid: [foreshadow-003]
 - 林予怀没有立刻崩溃，状态比前四卷更沉静。
 - 结尾落到赵一鸣约春节见面，推动第五卷回乡线。
 - 扩写轮补入教辅编辑部日常、同事调侃、旧 QQ 普通聊天回看和《后来》文件名，使工作后的成熟声纹更落地。
+- 第三轮硬校对将沈安晴任教地点统一为青河县城小学。
 
 ## 修改意见
 

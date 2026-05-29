@@ -5,7 +5,7 @@ volume: 4
 status: done
 review_round: 2
 word_count_target: 4000
-word_count_actual: 3289
+word_count_actual: 3571
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [白描, 不写之写, 对照]

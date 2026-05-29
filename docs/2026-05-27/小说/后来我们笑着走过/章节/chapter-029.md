@@ -5,7 +5,7 @@ volume: 3
 status: done
 review_round: 2
 word_count_target: 4000
-word_count_actual: 3016
+word_count_actual: 3945
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [白描, 一击两鸣, 暗透法]

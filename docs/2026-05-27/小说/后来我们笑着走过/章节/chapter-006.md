@@ -3,11 +3,11 @@ id: chapter-006
 title: 第一场雪
 volume: 1
 status: done
-review_round: 2
+review_round: 3
 word_count_target: 4000
-word_count_actual: 3709
+word_count_actual: 4752
 canon_changed: true
-updated_at: 2026-05-28
+updated_at: 2026-05-29
 techniques_used: [白描, 草蛇灰线, 不写之写]
 foreshadows_planted: []
 foreshadows_paid: []
@@ -31,6 +31,7 @@ foreshadows_paid: []
 - 诗歌保持青涩，不故意写成熟。
 - 雪景落在人身上，没有只做气氛装饰。
 - 扩写轮补入天气预报落空、沈安晴看雪反应、操场雪人距离和《初见》草稿过程，使第一首诗来源更具体。
+- 第三轮硬校对将校内树名统一为法桐。
 
 ## 修改意见
 

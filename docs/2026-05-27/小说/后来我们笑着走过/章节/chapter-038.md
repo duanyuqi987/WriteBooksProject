@@ -5,7 +5,7 @@ volume: 4
 status: done
 review_round: 2
 word_count_target: 4000
-word_count_actual: 3146
+word_count_actual: 3462
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [低谷场景, 朋友镜像, 白描]

@@ -5,7 +5,7 @@ volume: 3
 status: done
 review_round: 2
 word_count_target: 4000
-word_count_actual: 3026
+word_count_actual: 4018
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [不写之写, 暗透法, 白描]

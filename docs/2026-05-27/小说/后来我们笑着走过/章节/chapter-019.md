@@ -3,11 +3,11 @@ id: chapter-019
 title: 六月七日
 volume: 2
 status: done
-review_round: 2
+review_round: 3
 word_count_target: 4000
-word_count_actual: 2976
+word_count_actual: 3753
 canon_changed: true
-updated_at: 2026-05-28
+updated_at: 2026-05-29
 techniques_used: [白描, 不写之写, 一击两鸣]
 foreshadows_planted: []
 foreshadows_paid: []
@@ -31,6 +31,7 @@ foreshadows_paid: []
 - 主角没有把高考写成青春模板，而是从手心汗、文具袋、大巴等细节进入。
 - 翠湖被轻微触碰，为下一章埋入做准备。
 - 扩写轮补入水房早餐、班主任送考、语文作文压住私心、中午鸡腿、考后宿舍夜谈，使“加油”成为已发生的真实行动。
+- 第三轮硬校对统一送考班主任为邱老师，修正人物代词。
 
 ## 修改意见
 

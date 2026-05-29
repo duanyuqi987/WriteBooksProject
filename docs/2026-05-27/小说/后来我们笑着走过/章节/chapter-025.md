@@ -3,11 +3,11 @@ id: chapter-025
 title: 志愿表上的南北
 volume: 3
 status: done
-review_round: 2
-word_count_target: 4000
-word_count_actual: 4159
+review_round: 3
+word_count_target: 6000
+word_count_actual: 4553
 canon_changed: true
-updated_at: 2026-05-28
+updated_at: 2026-05-29
 techniques_used: [白描, 一击两鸣, 暗透法]
 foreshadows_planted: []
 foreshadows_paid: []
@@ -31,6 +31,7 @@ foreshadows_paid: []
 - 林予怀没有盲目跟随沈安晴，保住自我路径。
 - 沈安晴想看海，开启更大的世界。
 - 扩写轮补入招生计划书、父亲压力、班主任谈话、机房确认和城市距离，使南北分离更现实。
+- 30万字扩景轮第一批补入沈安晴想去南方的独立理由、办公室走廊和优秀毕业生照片，让志愿选择从纸面距离落到具体场合。
 
 ## 修改意见
 

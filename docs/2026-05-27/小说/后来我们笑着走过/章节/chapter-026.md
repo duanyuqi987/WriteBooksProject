@@ -3,11 +3,11 @@ id: chapter-026
 title: 开学列车
 volume: 3
 status: done
-review_round: 2
-word_count_target: 4000
-word_count_actual: 4449
+review_round: 3
+word_count_target: 6000
+word_count_actual: 4811
 canon_changed: true
-updated_at: 2026-05-28
+updated_at: 2026-05-29
 techniques_used: [白描, 不写之写, 草蛇灰线]
 foreshadows_planted: []
 foreshadows_paid: []
@@ -31,6 +31,7 @@ foreshadows_paid: []
 - 家庭反应和学校流程落地，没有空喊离别。
 - 结尾把列车写成分开而非单纯未来。
 - 扩写轮补入录取通知书、送站、报到流程、宿舍初见、曹然出场和两地照片，使异地开端更有生活现场。
+- 30万字扩景轮第一批补入沈安晴南方校园的五楼宿舍、水泥路、脸盆和手绘路线，让她的新生活不只作为林予怀的远方存在。
 
 ## 修改意见
 

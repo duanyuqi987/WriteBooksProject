@@ -3,9 +3,9 @@ id: chapter-023
 title: 你好，我是沈安晴
 volume: 3
 status: done
-review_round: 4
-word_count_target: 4000
-word_count_actual: 4063
+review_round: 5
+word_count_target: 6000
+word_count_actual: 4578
 canon_changed: true
 updated_at: 2026-05-29
 techniques_used: [草蛇灰线, 白描, 不写之写]
@@ -33,6 +33,7 @@ foreshadows_paid: []
 - 扩写轮补入旧电脑、QQ空间整理、输入删除、初聊节奏、宋词对照和赵一鸣旁观，使线上靠近更有时代质感。
 - 第一轮精修减少“我看着/可能”的密集重复，保持 QQ 初聊的紧张感但降低解释腔。
 - 第四轮前四卷精修去掉“被看见”的概念判断，保留被看见后仍可能不被选择的疼感。
+- 30万字扩景轮第一批补入沈安晴家中客厅、表妹作业、碗筷声、院外水声和同学录未写完的停顿，让 QQ 对话有明确生活场合。
 
 ## 修改意见
 

@@ -3,11 +3,11 @@ id: chapter-024
 title: 暑假的电话
 volume: 3
 status: done
-review_round: 3
-word_count_target: 4000
-word_count_actual: 4047
+review_round: 4
+word_count_target: 6000
+word_count_actual: 4642
 canon_changed: true
-updated_at: 2026-05-28
+updated_at: 2026-05-29
 techniques_used: [白描, 不写之写, 草蛇灰线]
 foreshadows_planted: []
 foreshadows_paid: []
@@ -32,6 +32,7 @@ foreshadows_paid: []
 - 沈安晴的怕与边界清楚，不被写成简单接受。
 - 扩写轮补入暑假家务、网吧等待、短信费用、旧手机号和电话边界，使靠近里的现实阻力更清楚。
 - 第二轮精修将章末从解释“大人世界很硬”改为粥、鸡蛋和志愿指南的饭桌动作。
+- 30万字扩景轮第一批补入村口麦场、家中等短信、沈安晴外婆家和菜市场细节，让暑假电话前后的现实生活更有场所感。
 
 ## 修改意见
 

@@ -3,9 +3,9 @@ id: chapter-027
 title: 她说为我好
 volume: 3
 status: done
-review_round: 4
-word_count_target: 4000
-word_count_actual: 3963
+review_round: 5
+word_count_target: 6000
+word_count_actual: 4456
 canon_changed: true
 updated_at: 2026-05-29
 techniques_used: [暗透法, 白描, 不写之写]
@@ -33,6 +33,7 @@ foreshadows_paid: []
 - 扩写轮补入军训细节、宿舍旁观、社团招新、空间动态和少聊一点后的反应，使“为你好”创伤更有前因。
 - 第二轮精修将章末从“除了等”式总结改为垃圾桶纸团的视觉落点。
 - 第四轮前四卷精修将“委屈清单”收成输入框和带刺的话，减少多年后解释感。
+- 30万字扩景轮第一批补入沈安晴学生会招新、报名表、班会和宿舍资料压力，让“少聊一点”有更清楚的外部生活依据。
 
 ## 修改意见
 

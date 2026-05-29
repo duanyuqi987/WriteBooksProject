@@ -3,9 +3,9 @@ id: chapter-047
 title: 婚礼或街口
 volume: 5
 status: done
-review_round: 3
+review_round: 4
 word_count_target: 4000
-word_count_actual: 5379
+word_count_actual: 5402
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [重逢前奏, 白描, 不写之写]
@@ -32,6 +32,7 @@ foreshadows_paid: []
 - 林予怀能听见沈安晴笑，却不再把它当奖赏。
 - 扩写轮补入签到、同学桌、叶蓁敬酒、周知远照顾沈安晴、走廊寒暄和捧花收束，让婚礼既热闹又克制。
 - 第一轮精修调整章末“挺好”重复句，保留祝福余味但减少口头回环。
+- 第二轮精修将章末从直接判断改为喜糖纸和橘子糖的物件回声。
 
 ## 修改意见
 

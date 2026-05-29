@@ -3,9 +3,9 @@ id: chapter-032
 title: 打扫卫生那晚
 volume: 4
 status: done
-review_round: 2
+review_round: 3
 word_count_target: 4000
-word_count_actual: 3129
+word_count_actual: 3401
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [白描, 暗透法, 物件线]
@@ -31,6 +31,7 @@ foreshadows_paid: []
 - 关系推进克制，没有直接进入恋爱定义。
 - 唐青禾的不安来自观察，而不是作者解释。
 - 扩写轮补入展示课堂、活动室旧海报、图钉扎手、雨夜下楼和“远方来信”，使日常靠近更具体。
+- 第二轮精修将章末从“人心卑劣”改为两个聊天窗口最小化和泡面汤凉掉的场景。
 
 ## 修改意见
 

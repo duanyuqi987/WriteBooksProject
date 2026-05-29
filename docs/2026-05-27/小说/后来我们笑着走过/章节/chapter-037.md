@@ -3,9 +3,9 @@ id: chapter-037
 title: 控制欲
 volume: 4
 status: done
-review_round: 2
+review_round: 3
 word_count_target: 4000
-word_count_actual: 3227
+word_count_actual: 3536
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [冲突场景, 自我审判, 白描]
@@ -31,6 +31,7 @@ foreshadows_paid: []
 - 没美化林予怀的占有欲，冲突责任明确。
 - 唐青禾有自己的社交和边界，不是围着主角旋转。
 - 扩写轮补入期末复习、社团聚餐照片、电话冲突、读书分享会门外偷看和日记二次自省，使控制欲从判断落到连续事件。
+- 第二轮精修将章末从“问题还会看”改为笔帽、楼梯笑声和宿舍门外的现实声响。
 
 ## 修改意见
 

@@ -3,9 +3,9 @@ id: chapter-040
 title: 我们都在长大
 volume: 4
 status: done
-review_round: 2
+review_round: 3
 word_count_target: 4000
-word_count_actual: 2990
+word_count_actual: 3262
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [卷收束, 不写之写, 主题句]
@@ -31,6 +31,7 @@ foreshadows_paid: [foreshadow-010]
 - 没用和好制造爽感，保留真实代价。
 - 章末把林予怀推向第五卷的“不再索要答案”。
 - 扩写轮补入二楼图书馆、社团竞选现场、唐青禾当选消息、车站候车和大巴离校，使第四卷收束更平稳。
+- 第二轮精修将章末从成长总结改为手机扣在膝盖和窗外树后退的离开动作。
 
 ## 修改意见
 

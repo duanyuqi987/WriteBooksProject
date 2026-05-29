@@ -3,9 +3,9 @@ id: chapter-046
 title: 翠湖还是那个翠湖
 volume: 5
 status: done
-review_round: 3
+review_round: 4
 word_count_target: 4000
-word_count_actual: 5086
+word_count_actual: 5102
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [旧地回收, 不写之写, 白描]
@@ -32,6 +32,7 @@ foreshadows_paid: [foreshadow-002]
 - 结尾以婚礼消息进入最终相见。
 - 扩写轮补入同心锁、纸飞机、宋词阅读、烤红薯、叶蓁私聊和回家饭桌，让翠湖从象征落回生活现场。
 - 第一轮精修减少“其实/可能/也许”的连续使用，让翠湖回望更克制。
+- 第二轮精修将章末从“人生会笑话你”的判断改为枕边手机和水管声。
 
 ## 修改意见
 

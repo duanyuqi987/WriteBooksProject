@@ -3,9 +3,9 @@ id: chapter-042
 title: 老同学聚会
 volume: 5
 status: done
-review_round: 2
+review_round: 3
 word_count_target: 4000
-word_count_actual: 2940
+word_count_actual: 2961
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [群像白描, 暗透法, 对照]
@@ -31,6 +31,7 @@ foreshadows_paid: []
 - 没让沈安晴强行登场，而是通过缺席制造成熟余味。
 - 唐诗宋词线由“少年不识愁滋味”自然回响。
 - 扩写轮补入回家饭桌、母亲整理衣领、通讯录复印件、毕业照流转和县一中雨夜，使群像与旧地更有生活感。
+- 第二轮精修将章末从“旧地方不等你”改为雨夜转身、校门路灯和新牌子滴水。
 
 ## 修改意见
 

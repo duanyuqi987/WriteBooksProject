@@ -3,9 +3,9 @@ id: chapter-014
 title: 赵一鸣的问题
 volume: 2
 status: done
-review_round: 3
+review_round: 4
 word_count_target: 4000
-word_count_actual: 3979
+word_count_actual: 3947
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [暗透法, 一击两鸣, 白描]
@@ -32,6 +32,7 @@ foreshadows_paid: []
 - 赵一鸣没有替主角选择，只指出“别把懦弱说成体贴”。
 - 扩写轮补入期中分析表、沈安晴学习方法发言、目标墙改成前十、沈安晴一句肯定和赵一鸣更尖锐的追问，使“高考后”成为清晰欠条。
 - 第一轮精修减少“其实”连用，让自我拆穿更像自然心理推进。
+- 第二轮精修将章末从解释性自白改为日记本纸页鼓起的物件落点。
 
 ## 修改意见
 

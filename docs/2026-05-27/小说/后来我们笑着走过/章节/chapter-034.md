@@ -3,9 +3,9 @@ id: chapter-034
 title: 秋风扫落叶
 volume: 4
 status: done
-review_round: 2
+review_round: 3
 word_count_target: 4000
-word_count_actual: 2918
+word_count_actual: 3146
 canon_changed: true
 updated_at: 2026-05-28
 techniques_used: [景物线, 不写之写, 对照]
@@ -31,6 +31,7 @@ foreshadows_paid: []
 - 沈安晴没有出场，但她的新生活造成现实距离。
 - 唐青禾的受伤通过看见而非控诉表现。
 - 扩写轮补入图书馆重逢、豆浆缓和、关东煮日常和海边照片冲击，使旧人新生活与新人日常形成对照。
+- 第二轮精修将章末从落叶比喻总结改为碎叶粘在鞋底的行动回声。
 
 ## 修改意见
 

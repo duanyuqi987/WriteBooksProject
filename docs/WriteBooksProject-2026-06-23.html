@@ -39,5 +39,39 @@
       <li>终章最后一句是否严格复用第一章题诗意象，仍可在第七卷规划深化时确认。</li>
     </ul>
   </section>
+
+  <section>
+    <h2>2026-06-23 15:02:31</h2>
+    <h3>本次修改内容</h3>
+    <p>继续扩展《熵枢纪元：七重跃迁》章节规划，将第51-2500章从 planned 状态扩展为 detailed 状态，生成全书2500章细纲，形成正文起草前的强约束系统。</p>
+
+    <h3>涉及文件</h3>
+    <ul>
+      <li>新增脚本：scripts/expand_entropy_all_chapter_outlines.py</li>
+      <li>新增细纲：docs/2026-06-23/小说/熵枢纪元：七重跃迁/细纲/chapter-0051.md 至 chapter-2500.md</li>
+      <li>更新追踪表：chapter-catalog.csv、追踪表/chapter-status.csv、追踪表/epigraph-plan.csv</li>
+      <li>更新入口文档：README.md、outline.md、project-state.md、章节总表.md、validation-report.md</li>
+      <li>新增强约束入口：强约束总纲.md</li>
+    </ul>
+
+    <h3>为什么要这么改</h3>
+    <p>用户要求把2500章标题细纲全部写出，形成强约束。全量细纲可以在后续正文写作时固定每章功能、物理层级、伏笔操作和章末处理，降低500万字长篇跑偏风险。</p>
+
+    <h3>当前验证结果</h3>
+    <ul>
+      <li>章节总数：2500 / 2500。</li>
+      <li>标题唯一数：2500 / 2500。</li>
+      <li>章节状态：2500章全部 detailed。</li>
+      <li>细纲文件数：2500 / 2500。</li>
+      <li>最短细纲：4224 字符。</li>
+      <li>题诗状态：前50章 complete，后2450章 drafted_in_outline。</li>
+    </ul>
+
+    <h3>尚未解决的问题或待办</h3>
+    <ul>
+      <li>当前后2450章细纲是结构化强约束稿，适合锁定方向；正式写正文前，可按每100章做一次文学化标题与场景精修。</li>
+      <li>如果后续要把后2450章题诗从“草案”提升为“完整题诗”，应单独执行题诗精修批次。</li>
+    </ul>
+  </section>
 </body>
 </html>

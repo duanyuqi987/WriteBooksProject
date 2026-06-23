@@ -1,14 +1,3 @@
----
-id: chapter-0046
-volume: 1
-status: drafting
-review_round: 0
-word_count_target: 2000
-word_count_actual: 2040
-canon_changed: false
-updated_at: 2026-06-23
----
-
 # chapter-0046 北京地下城停电
 
 ## 题诗
@@ -104,16 +93,3 @@ updated_at: 2026-06-23
 不是进攻。不是求救。
 
 是一份作业。交了就要批。
-
-## 自检记录
-
-- [x] 完成大纲
-- [x] 题诗原创押韵
-- [x] 无canon冲突
-- [x] 角色对话可区分
-- [x] 无AI腔
-- [x] 章末动作/发现/选择收尾
-- [x] 字数1800-2200
-- [x] 至少一个物理细节证明智能体在场
-- [x] 智能体非反派
-- [x] 眷恋线回响

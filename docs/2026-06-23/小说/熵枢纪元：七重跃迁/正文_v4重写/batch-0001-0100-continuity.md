@@ -5,7 +5,8 @@
 - `chapter-0001` 与 `chapter-0002` 作为精写样章处理。
 - `chapter-0003` 至 `chapter-0100` 以旧正文为素材底稿，嵌入 detailed-v4 的本章交易、代价和拒绝后果。
 - `chapter-0001` 至 `chapter-0025` 已完成第一轮章群精修，后续仍可做诗性与句级定稿。
-- `chapter-0026` 至 `chapter-0100` 仍是结构合格初稿，后续应按每 25 章人工通读一次，消除批处理痕迹。
+- `chapter-0026` 至 `chapter-0050` 已完成第二章群人工精修，回收旧稿主体，清理模板泄漏，统一证物驱动风格。
+- `chapter-0051` 至 `chapter-0100` 仍是结构合格初稿，后续应按每 25 章人工通读一次，消除批处理痕迹。
 
 ## 章节清单
 
@@ -36,31 +37,31 @@
 | chapter-0023 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
 | chapter-0024 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
 | chapter-0025 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
-| chapter-0026 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0027 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0028 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0029 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0030 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0031 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0032 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0033 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0034 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0035 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0036 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0037 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0038 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0039 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0040 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0041 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0042 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0043 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0044 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0045 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0046 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0047 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0048 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0049 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0050 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
+| chapter-0026 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
+| chapter-0027 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
+| chapter-0028 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
+| chapter-0029 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
+| chapter-0030 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
+| chapter-0031 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
+| chapter-0032 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
+| chapter-0033 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
+| chapter-0034 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
+| chapter-0035 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
+| chapter-0036 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
+| chapter-0037 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
+| chapter-0038 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
+| chapter-0039 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
+| chapter-0040 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
+| chapter-0041 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
+| chapter-0042 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
+| chapter-0043 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
+| chapter-0044 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
+| chapter-0045 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
+| chapter-0046 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
+| chapter-0047 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
+| chapter-0048 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
+| chapter-0049 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
+| chapter-0050 | v4-rewrite-polished | 第二章群精修：回收旧稿主体，清理模板泄漏，统一证物驱动风格 |
 | chapter-0051 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
 | chapter-0052 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
 | chapter-0053 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |

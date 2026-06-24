@@ -84,5 +84,54 @@
       <li>通用禁令应从单章细纲中抽离到总检查清单，单章只保留本章专属禁令和本章交易。</li>
     </ul>
   </section>
+  <section>
+    <h2>2026-06-24 10:44:59</h2>
+    <h3>本次修改了哪些内容</h3>
+    <p>按“每 25 章建立章群剧情链、每章新增本章交易”的要求，完成《熵枢纪元：七重跃迁》全书 2500 章细纲 detailed-v4 重构。</p>
+    <ul>
+      <li>重写 2500 个细纲文件，新增 <code>章群剧情链</code> 与 <code>本章交易</code> 两个硬约束分节。</li>
+      <li>每 25 章生成一条章群剧情链，固定包含起因、反证、代价、误判、失控、回响、门槛，全书共 100 条。</li>
+      <li>每章生成唯一交易句：为得到 X，必须失去 Y；若拒绝，Z 会提前发生。</li>
+      <li>同步更新 <code>chapter-catalog.csv</code>、<code>chapter-status.csv</code>、<code>epigraph-plan.csv</code>。</li>
+      <li>新增 <code>arc-chain.csv</code>、<code>chapter-trade.csv</code>、<code>poetry-polish-batches.csv</code> 三个追踪表。</li>
+      <li>新增 <code>validation-outline-v4.md</code> 与 <code>outline-repetition-audit-v4-2026-06-24.md</code>，记录结构校验和重复风险审计结果。</li>
+      <li>新增 <code>scripts/restructure_entropy_outlines_v4.py</code>，用于复现本轮章群交易重构。</li>
+    </ul>
+
+    <h3>修改涉及哪些文件</h3>
+    <ul>
+      <li><code>docs/2026-06-23/小说/熵枢纪元：七重跃迁/细纲/chapter-0001.md</code> 至 <code>chapter-2500.md</code></li>
+      <li><code>docs/2026-06-23/小说/熵枢纪元：七重跃迁/chapter-catalog.csv</code></li>
+      <li><code>docs/2026-06-23/小说/熵枢纪元：七重跃迁/追踪表/chapter-status.csv</code></li>
+      <li><code>docs/2026-06-23/小说/熵枢纪元：七重跃迁/追踪表/epigraph-plan.csv</code></li>
+      <li><code>docs/2026-06-23/小说/熵枢纪元：七重跃迁/追踪表/arc-chain.csv</code></li>
+      <li><code>docs/2026-06-23/小说/熵枢纪元：七重跃迁/追踪表/chapter-trade.csv</code></li>
+      <li><code>docs/2026-06-23/小说/熵枢纪元：七重跃迁/追踪表/poetry-polish-batches.csv</code></li>
+      <li><code>docs/2026-06-23/小说/熵枢纪元：七重跃迁/validation-outline-v4.md</code></li>
+      <li><code>docs/2026-06-23/小说/熵枢纪元：七重跃迁/outline-repetition-audit-v4-2026-06-24.md</code></li>
+      <li><code>scripts/restructure_entropy_outlines_v4.py</code></li>
+      <li><code>docs/WriteBooksProject-2026-06-24.html</code></li>
+    </ul>
+
+    <h3>为什么要这么改</h3>
+    <p>v3 已经解决题诗唯一性，但仍有场景骨架和章节推进模板化问题。正文之所以容易写成概念堆叠，是因为单章缺少“获得、失去、拒绝后果”的压力结构，也缺少章群级因果链。因此本轮把每 25 章做成可追踪的剧情链，并把每章改成不可删的交易节点。</p>
+
+    <h3>当前验证结果</h3>
+    <ul>
+      <li>细纲文件数：2500 / 2500。</li>
+      <li>25 章章群数：100 / 100。</li>
+      <li>本章交易数：2500 / 2500，且全部唯一。</li>
+      <li>重复场景标题：无。</li>
+      <li><code>epigraph-plan.csv</code> 已恢复为 2500 行，并统一记录“自创；不引用现代诗原文；不仿写在世作者独特表达”。</li>
+      <li>脚本验证：<code>python -m py_compile scripts/restructure_entropy_outlines_v4.py</code> 通过。</li>
+    </ul>
+
+    <h3>尚未解决的问题或待办</h3>
+    <ul>
+      <li>detailed-v4 解决的是正文推力和结构强约束，不等于最终文学质量已经完成。</li>
+      <li>进入正文阶段应基于 detailed-v4 分批重写旧正文，不建议继续在旧正文上堆概念。</li>
+      <li>题诗已做到原创与唯一，但唐诗、宋词、元曲和现代诗的诗味仍应按每 50 或 100 章人工精修。</li>
+    </ul>
+  </section>
 </body>
 </html>

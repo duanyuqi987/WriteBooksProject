@@ -169,5 +169,49 @@
       <li>题诗仍建议在正文批次完成后统一做诗性精修。</li>
     </ul>
   </section>
+  <section>
+    <h2>2026-06-24 11:01:14</h2>
+    <h3>本次修改了哪些内容</h3>
+    <p>按“最好一次写 100 章”的要求，完成《熵枢纪元：七重跃迁》正文 v4 重写目录的前 100 章批次。</p>
+    <ul>
+      <li>新增 <code>正文_v4重写/chapter-0001.md</code>，作为开篇精写重写样章。</li>
+      <li>保留既有 <code>chapter-0002.md</code> 精写样章，并补充 v4 隐藏校验注释。</li>
+      <li>新增 <code>chapter-0003.md</code> 至 <code>chapter-0100.md</code>，以旧正文为主体素材，嵌入每章交易、代价和拒绝后果。</li>
+      <li>新增 <code>batch-0001-0100-continuity.md</code>，记录本批次章节状态与处理方式。</li>
+      <li>新增 <code>validation-body-v4-batch-0001-0100.md</code>，记录正文批次校验结果。</li>
+      <li>新增 <code>scripts/rewrite_entropy_body_v4_batch.py</code>，用于复现 0003-0100 的批量重写初稿生成。</li>
+      <li>更新 <code>正文_v4重写/README.md</code>，说明当前批次状态和后续精修建议。</li>
+    </ul>
+
+    <h3>修改涉及哪些文件</h3>
+    <ul>
+      <li><code>docs/2026-06-23/小说/熵枢纪元：七重跃迁/正文_v4重写/chapter-0001.md</code> 至 <code>chapter-0100.md</code></li>
+      <li><code>docs/2026-06-23/小说/熵枢纪元：七重跃迁/正文_v4重写/README.md</code></li>
+      <li><code>docs/2026-06-23/小说/熵枢纪元：七重跃迁/正文_v4重写/batch-0001-0100-continuity.md</code></li>
+      <li><code>docs/2026-06-23/小说/熵枢纪元：七重跃迁/正文_v4重写/validation-body-v4-batch-0001-0100.md</code></li>
+      <li><code>scripts/rewrite_entropy_body_v4_batch.py</code></li>
+      <li><code>docs/WriteBooksProject-2026-06-24.html</code></li>
+    </ul>
+
+    <h3>为什么要这么改</h3>
+    <p>原正文并非不能用，其中已有大量有效意象和硬科幻素材；问题是缺少 v4 章群交易结构。因此本轮不覆盖旧正文，而是在新目录中保留旧稿主体，补入每章的获得、失去和拒绝后果，形成可继续人工精修的 100 章初稿批次。</p>
+
+    <h3>当前验证结果</h3>
+    <ul>
+      <li>正文 v4 重写批次数：100 / 100。</li>
+      <li>v4 标记数：100 / 100。</li>
+      <li>细纲标题泄漏：0。</li>
+      <li>最短文件：5783 字节；平均文件：9733.6 字节；最长文件：21916 字节。</li>
+      <li>脚本验证：<code>python -m py_compile scripts/rewrite_entropy_body_v4_batch.py</code> 通过。</li>
+      <li>原 <code>正文/</code> 目录未覆盖。</li>
+    </ul>
+
+    <h3>尚未解决的问题或待办</h3>
+    <ul>
+      <li><code>chapter-0003.md</code> 至 <code>chapter-0100.md</code> 是结构合格的 v4 初稿，不是最终文学定稿。</li>
+      <li>下一步应人工精修 <code>chapter-0001.md</code> 至 <code>chapter-0025.md</code>，先把第一个章群打磨顺。</li>
+      <li>题诗仍需按 50 章批次做诗性精修。</li>
+    </ul>
+  </section>
 </body>
 </html>

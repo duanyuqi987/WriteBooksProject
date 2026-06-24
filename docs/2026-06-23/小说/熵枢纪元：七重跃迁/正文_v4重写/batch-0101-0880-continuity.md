@@ -3,12 +3,12 @@
 ## 批次原则
 
 - 以旧正文为素材底稿，嵌入 detailed-v4 的本章交易、代价和拒绝后果。
-- 缺旧正文的章节使用 v4 细纲补写占位初稿，并在清单中标明。
+- 缺旧正文的章节已优先按 detailed-v4 细纲精写补章，并在清单中标明。
 - 本批不是最终定稿，后续应按每 25 或 50 章人工通读一次，消除批处理痕迹。
 
 ## 缺失情况
 
-- 缺旧正文：chapter-0120, chapter-0390, chapter-0879
+- 缺旧正文但已精写补章：chapter-0120, chapter-0390, chapter-0879
 - 缺细纲：无
 
 ## 章节清单
@@ -34,7 +34,7 @@
 | chapter-0117 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
 | chapter-0118 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
 | chapter-0119 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0120 | v4-rewrite-draft | 细纲补写占位初稿 + 本章交易嵌入 |
+| chapter-0120 | v4-rewrite-polished | 旧正文缺失，按细纲精写补章 + 本章交易落地 |
 | chapter-0121 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
 | chapter-0122 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
 | chapter-0123 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
@@ -304,7 +304,7 @@
 | chapter-0387 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
 | chapter-0388 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
 | chapter-0389 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0390 | v4-rewrite-draft | 细纲补写占位初稿 + 本章交易嵌入 |
+| chapter-0390 | v4-rewrite-polished | 旧正文缺失，按细纲精写补章 + 本章交易落地 |
 | chapter-0391 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
 | chapter-0392 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
 | chapter-0393 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
@@ -793,5 +793,5 @@
 | chapter-0876 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
 | chapter-0877 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
 | chapter-0878 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0879 | v4-rewrite-draft | 细纲补写占位初稿 + 本章交易嵌入 |
+| chapter-0879 | v4-rewrite-polished | 旧正文缺失，按细纲精写补章 + 本章交易落地 |
 | chapter-0880 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |

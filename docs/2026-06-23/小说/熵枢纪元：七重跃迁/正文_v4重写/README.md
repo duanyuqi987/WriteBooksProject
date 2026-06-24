@@ -15,7 +15,7 @@
 - `chapter-0001.md`：精写重写，用于建立开篇语气和第 1 章交易。
 - `chapter-0002.md`：精写重写，以旧正文《第一次拆解》为素材，按 detailed-v4 重组。
 - `chapter-0003.md` 至 `chapter-0880.md`：v4 重写初稿，以旧正文为主体素材，嵌入每章交易、代价和拒绝后果。
-- `chapter-0120.md`、`chapter-0390.md`、`chapter-0879.md`：旧正文缺失，当前为细纲补写占位初稿。
+- `chapter-0120.md`、`chapter-0390.md`、`chapter-0879.md`：旧正文缺失，已按 detailed-v4 细纲精写补章，不再是占位章。
 - `batch-0001-0100-continuity.md`：记录本批次状态与处理方式。
 - `batch-0101-0880-continuity.md`：记录 101-880 批次状态与缺旧稿情况。
 - `validation-body-v4-batch-0001-0880.md`：记录 1-880 总校验结果。

@@ -1,11 +1,10 @@
 from __future__ import annotations
 
+import argparse
 import re
 from pathlib import Path
 
 
-BATCH_START = 3
-BATCH_END = 100
 STATE = "v4-rewrite-draft"
 
 
@@ -39,6 +38,13 @@ def first_match(text: str, pattern: str, default: str = "") -> str:
 
 def title_from_old(old_text: str, chapter_no: int) -> str:
     first = old_text.splitlines()[0].lstrip("#").strip()
+    first = re.sub(r"^chapter-\d{4}\s*", "", first)
+    first = re.sub(r"^第[一二三四五六七八九十百千零〇\d]+章\s*", "", first)
+    return first or f"chapter-{chapter_no:04d}"
+
+
+def title_from_outline(outline_text: str, chapter_no: int) -> str:
+    first = outline_text.splitlines()[0].lstrip("#").strip()
     first = re.sub(r"^chapter-\d{4}\s*", "", first)
     first = re.sub(r"^第[一二三四五六七八九十百千零〇\d]+章\s*", "", first)
     return first or f"chapter-{chapter_no:04d}"
@@ -150,7 +156,8 @@ def build_extension_paragraphs(chapter_no: int, title: str, outline: str) -> lis
 
 
 def rewrite_chapter(chapter_no: int, old_text: str, outline_text: str) -> str:
-    title = title_from_old(old_text, chapter_no)
+    has_old = bool(old_text.strip())
+    title = title_from_old(old_text, chapter_no) if has_old else title_from_outline(outline_text, chapter_no)
     poem = section(old_text, "题诗") or section(outline_text, "自创题诗草案")
     body = section(old_text, "正文")
     paragraphs = clean_paragraphs(body)
@@ -174,11 +181,8 @@ def rewrite_chapter(chapter_no: int, old_text: str, outline_text: str) -> str:
         paragraphs.extend(build_extension_paragraphs(chapter_no, title, outline_text))
 
     trade = first_match(outline_text, r"本章交易：(.+)", "")
-    note = (
-        f"<!-- {STATE}；旧正文素材重组；v4约束：本章交易：{trade} -->"
-        if trade
-        else f"<!-- {STATE}；旧正文素材重组 -->"
-    )
+    source_mode = "旧正文素材重组" if has_old else "细纲补写占位初稿"
+    note = f"<!-- {STATE}；{source_mode}；v4约束：本章交易：{trade} -->" if trade else f"<!-- {STATE}；{source_mode} -->"
     return "\n\n".join(
         [
             f"# chapter-{chapter_no:04d} {title}",
@@ -193,6 +197,13 @@ def rewrite_chapter(chapter_no: int, old_text: str, outline_text: str) -> str:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description="按指定章节区间生成《熵枢纪元》正文 v4 重写初稿。")
+    parser.add_argument("--start", type=int, default=3, help="起始章号，默认 3")
+    parser.add_argument("--end", type=int, default=100, help="结束章号，默认 100")
+    args = parser.parse_args()
+    if args.start < 1 or args.end < args.start:
+        raise SystemExit("--start/--end 区间无效")
+
     book_dir = find_book_dir()
     old_dir = book_dir / "正文"
     outline_dir = book_dir / "细纲"
@@ -200,42 +211,56 @@ def main() -> None:
     rewrite_dir.mkdir(parents=True, exist_ok=True)
 
     written = []
-    for chapter_no in range(BATCH_START, BATCH_END + 1):
+    missing_old = []
+    missing_outline = []
+    for chapter_no in range(args.start, args.end + 1):
         old_path = old_dir / f"chapter-{chapter_no:04d}.md"
         outline_path = outline_dir / f"chapter-{chapter_no:04d}.md"
-        if not old_path.exists() or not outline_path.exists():
+        if not outline_path.exists():
+            missing_outline.append(chapter_no)
             continue
-        old_text = old_path.read_text(encoding="utf-8")
+        if old_path.exists():
+            old_text = old_path.read_text(encoding="utf-8")
+            source_mode = "旧正文素材重组 + 本章交易嵌入"
+        else:
+            old_text = ""
+            source_mode = "细纲补写占位初稿 + 本章交易嵌入"
+            missing_old.append(chapter_no)
         outline_text = outline_path.read_text(encoding="utf-8")
         new_text = rewrite_chapter(chapter_no, old_text, outline_text)
         target = rewrite_dir / f"chapter-{chapter_no:04d}.md"
         target.write_text(new_text, encoding="utf-8", newline="\n")
-        written.append(chapter_no)
+        written.append((chapter_no, source_mode))
 
-    index_path = rewrite_dir / "batch-0001-0100-continuity.md"
+    index_path = rewrite_dir / f"batch-{args.start:04d}-{args.end:04d}-continuity.md"
     lines = [
-        "# 正文 v4 重写批次：chapter-0001 至 chapter-0100",
+        f"# 正文 v4 重写批次：chapter-{args.start:04d} 至 chapter-{args.end:04d}",
         "",
         "## 批次原则",
         "",
-        "- `chapter-0001` 与 `chapter-0002` 作为精写样章处理。",
-        "- `chapter-0003` 至 `chapter-0100` 以旧正文为素材底稿，嵌入 detailed-v4 的本章交易、代价和拒绝后果。",
-        "- 本批不是最终定稿，后续应按每 25 章人工通读一次，消除批处理痕迹。",
+        "- 以旧正文为素材底稿，嵌入 detailed-v4 的本章交易、代价和拒绝后果。",
+        "- 缺旧正文的章节使用 v4 细纲补写占位初稿，并在清单中标明。",
+        "- 本批不是最终定稿，后续应按每 25 或 50 章人工通读一次，消除批处理痕迹。",
+        "",
+        "## 缺失情况",
+        "",
+        f"- 缺旧正文：{', '.join(f'chapter-{n:04d}' for n in missing_old) if missing_old else '无'}",
+        f"- 缺细纲：{', '.join(f'chapter-{n:04d}' for n in missing_outline) if missing_outline else '无'}",
         "",
         "## 章节清单",
         "",
         "| 章节 | 状态 | 处理方式 |",
         "|---|---|---|",
-        "| chapter-0001 | v4-rewrite-polished | 精写重写 |",
-        "| chapter-0002 | v4-rewrite-polished | 精写重写 |",
     ]
-    for chapter_no in written:
-        lines.append(f"| chapter-{chapter_no:04d} | {STATE} | 旧正文素材重组 + 本章交易嵌入 |")
+    for chapter_no, source_mode in written:
+        lines.append(f"| chapter-{chapter_no:04d} | {STATE} | {source_mode} |")
     index_path.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
 
     print(f"book_dir={book_dir}")
     print(f"written={len(written)}")
-    print(f"range={BATCH_START:04d}-{BATCH_END:04d}")
+    print(f"range={args.start:04d}-{args.end:04d}")
+    print(f"missing_old={','.join(str(n) for n in missing_old) if missing_old else 'none'}")
+    print(f"missing_outline={','.join(str(n) for n in missing_outline) if missing_outline else 'none'}")
     print(f"index={index_path}")
 
 

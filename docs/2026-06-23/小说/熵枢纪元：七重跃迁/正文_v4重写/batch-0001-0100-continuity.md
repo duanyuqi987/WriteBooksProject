@@ -4,7 +4,8 @@
 
 - `chapter-0001` 与 `chapter-0002` 作为精写样章处理。
 - `chapter-0003` 至 `chapter-0100` 以旧正文为素材底稿，嵌入 detailed-v4 的本章交易、代价和拒绝后果。
-- 本批不是最终定稿，后续应按每 25 章人工通读一次，消除批处理痕迹。
+- `chapter-0001` 至 `chapter-0025` 已完成第一轮章群精修，后续仍可做诗性与句级定稿。
+- `chapter-0026` 至 `chapter-0100` 仍是结构合格初稿，后续应按每 25 章人工通读一次，消除批处理痕迹。
 
 ## 章节清单
 
@@ -12,29 +13,29 @@
 |---|---|---|
 | chapter-0001 | v4-rewrite-polished | 精写重写 |
 | chapter-0002 | v4-rewrite-polished | 精写重写 |
-| chapter-0003 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0004 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0005 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0006 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0007 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0008 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0009 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0010 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0011 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0012 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0013 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0014 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0015 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0016 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0017 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0018 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0019 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0020 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0021 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0022 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0023 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0024 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
-| chapter-0025 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
+| chapter-0003 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
+| chapter-0004 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
+| chapter-0005 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
+| chapter-0006 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
+| chapter-0007 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
+| chapter-0008 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
+| chapter-0009 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
+| chapter-0010 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
+| chapter-0011 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
+| chapter-0012 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
+| chapter-0013 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
+| chapter-0014 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
+| chapter-0015 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
+| chapter-0016 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
+| chapter-0017 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
+| chapter-0018 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
+| chapter-0019 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
+| chapter-0020 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
+| chapter-0021 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
+| chapter-0022 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
+| chapter-0023 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
+| chapter-0024 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
+| chapter-0025 | v4-rewrite-polished | 章群精修：清理模板句，补强证物/交易/代价/钩子 |
 | chapter-0026 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
 | chapter-0027 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |
 | chapter-0028 | v4-rewrite-draft | 旧正文素材重组 + 本章交易嵌入 |

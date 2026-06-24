@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>WriteBooksProject 2026-06-24 Iteration Log</title>
+</head>
+<body>
+  <h1>WriteBooksProject 2026-06-24 Iteration Log</h1>
+
+  <section>
+    <h2>2026-06-24 10:11:06</h2>
+    <h3>本次修改了哪些内容</h3>
+    <p>针对《熵枢纪元：七重跃迁》细纲后段重复、题诗重复的问题，重写全书 2500 章细纲为 detailed-v3 版本，并为每章生成唯一的原创题诗草案。</p>
+    <ul>
+      <li>重写 2500 个细纲文件，强化每章的主证物、标题动作、物理环境、指定操作、失败点、眷恋回响和章末钩子。</li>
+      <li>更新 <code>chapter-catalog.csv</code>，同步核心事件、人物变化、信息披露、伏笔操作、章末处理和状态。</li>
+      <li>更新 <code>追踪表/epigraph-plan.csv</code>，将 2500 章题诗状态标记为 complete，并记录对应题诗体式。</li>
+      <li>更新 <code>追踪表/chapter-status.csv</code>，将 2500 章状态标记为 detailed-v3。</li>
+      <li>新增 <code>validation-outline-v3.md</code>，记录本轮细纲与题诗校验结果。</li>
+      <li>新增 <code>scripts/rewrite_entropy_outlines_v3.py</code>，用于批量重建细纲、题诗、目录和追踪表。</li>
+    </ul>
+
+    <h3>修改涉及哪些文件</h3>
+    <ul>
+      <li><code>docs/2026-06-23/小说/熵枢纪元：七重跃迁/细纲/chapter-0001.md</code> 至 <code>chapter-2500.md</code></li>
+      <li><code>docs/2026-06-23/小说/熵枢纪元：七重跃迁/chapter-catalog.csv</code></li>
+      <li><code>docs/2026-06-23/小说/熵枢纪元：七重跃迁/追踪表/epigraph-plan.csv</code></li>
+      <li><code>docs/2026-06-23/小说/熵枢纪元：七重跃迁/追踪表/chapter-status.csv</code></li>
+      <li><code>docs/2026-06-23/小说/熵枢纪元：七重跃迁/validation-outline-v3.md</code></li>
+      <li><code>scripts/rewrite_entropy_outlines_v3.py</code></li>
+    </ul>
+
+    <h3>为什么要这么改</h3>
+    <p>旧细纲后段出现模板化推进，无法约束正文写作，导致章节容易变成概念堆叠。题诗也有重复风险，不符合“每章题诗都不一样”的要求。因此本轮把题诗唯一性和细纲差异性做成硬约束，并把结果同步到目录和追踪表中。</p>
+
+    <h3>当前验证结果</h3>
+    <ul>
+      <li>细纲文件数：2500 / 2500。</li>
+      <li>题诗总数：2500 / 2500。</li>
+      <li>唯一题诗数：2500 / 2500。</li>
+      <li>题诗体式覆盖：自创实验记录诗、自创箴言诗、自创现代诗、自创元曲小令式、自创七言绝句式、自创五言律诗式、自创宋词小令式。</li>
+      <li><code>epigraph-plan.csv</code> 行数：2500。</li>
+      <li><code>chapter-status.csv</code> 行数：2500。</li>
+    </ul>
+
+    <h3>尚未解决的问题或待办</h3>
+    <ul>
+      <li>这些题诗已经满足“原创且不重复”的前期约束，但仍属于草案级别；进入正文定稿前，建议按每 50 或 100 章做一次人工诗性精修。</li>
+      <li>本轮未改动 <code>正文/</code> 目录；后续正文应基于 detailed-v3 细纲分批重写，而不是继续沿用旧正文结构。</li>
+    </ul>
+  </section>
+</body>
+</html>

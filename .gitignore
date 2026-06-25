@@ -71,8 +71,8 @@ vendor/inkos/test-project/
 *.lock
 
 # === Generated Novel Content (exclude by default; users opt-in) ===
-docs/**/小说/*/章节/
-docs/**/小说/*/第*卷/
+# docs/**/小说/*/章节/  # 已禁用：CLAUDE.md 要求 docs/ 全部上传
+# docs/**/小说/*/第*卷/
 
 # === Generated HTML Books (large files) ===
 docs/**/学习书/*.html

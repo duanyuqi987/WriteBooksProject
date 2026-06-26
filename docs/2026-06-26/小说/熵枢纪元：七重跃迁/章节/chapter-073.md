@@ -4,7 +4,7 @@ volume: 3
 status: drafting
 review_round: 0
 word_count_target: 7000
-word_count_actual: 0
+word_count_actual: 10205
 canon_changed: false
 updated_at: 2026-06-26
 ---
